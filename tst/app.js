@@ -1,7 +1,9 @@
+
 const fs=require('fs/promises')
 const express= require('express')
 const logger=require('morgan')
 const cors=require('cors')
+const prov= require('./connectorTodb')
 
 const app= express();
 /*Непонятно как и почему это работает,  но юбез него оно не работает вообще(body is undefined)*/
@@ -19,7 +21,9 @@ app.get('/addInBase',(req, res)=>{
     res.send('added')
 })
 app.post('/add',function(req, res){
-    console.log(req.body)
+    fs.appendFile('./isMyDataBase.txt', '\n'+JSON.stringify(req.body) + '*  time='+  new Date())
+    prov()
+    console.log(JSON.stringify(req.body))
 })
  let options={
      origin: '*',
