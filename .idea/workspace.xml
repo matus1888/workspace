@@ -20,26 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/AppBTSRP.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/HomePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tst/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Add.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/AddNewString.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/connectorTodb.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/connectorTodb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/isMyDataBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tst/isMyDataBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/tst.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +63,8 @@
       <updated>1617726269294</updated>
       <workItem from="1617726270567" duration="7702000" />
       <workItem from="1618037058435" duration="42199000" />
+      <workItem from="1618161365387" duration="3759000" />
+      <workItem from="1618474814871" duration="7544000" />
     </task>
     <servers />
   </component>
@@ -93,10 +84,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="64" y="219" key="#SQL_Dialects" timestamp="1618164090744">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="64" y="219" key="#SQL_Dialects/0.0.1366.732@0.0.1366.732" timestamp="1618164090744" />
+    <state x="278" y="27" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618477234002">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="278" y="27" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.732@0.0.1366.732" timestamp="1618477234002" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618042177617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1618160612057">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1618160612057" />
+    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1618160612057">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1618160612057" />
+    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1618160612056">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1618160612056" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1618160612057">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1618160612057" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618078834869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

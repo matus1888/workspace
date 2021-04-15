@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon `--unhandled-rejections=strict` ./app.js "
+    "start": "nodemon `--unhandled-rejections=strict` ./app.js"
   },
   "keywords": [],
   "author": "",
