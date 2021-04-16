@@ -62,8 +62,70 @@ const deleteUser = (request, response) => {
         response.status(200).send({deletedUser:name})
     })
 }
+
+
+
+/*getArticles*/
+
+const getArticles = (request, response) => {
+    pool.query('SELECT * FROM articles ORDER BY id', (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
+const getArticlesByUserID = (request, response) => {
+    const id = Number(request.params.id)
+    pool.query('SELECT * FROM articles WHERE userId = $1 ORDER BY id', [id], (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
+// const createUser = (request, response) => {
+//     const name=String(request.params.name)
+//     const pass=String(request.body.password)
+//     pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  pass], (error, results) => {
+//         if (error) {
+//             response.status(500).send(error)
+//             throw error
+//         }
+//         response.status(201).send({isertedName:name})
+//     })
+// }
+// const updateUser = (request, response) => {
+//     const name = String(request.params.name)
+//     const newName= request.body.name
+//
+//     pool.query(
+//         'UPDATE users SET name = $1 WHERE name = $2',
+//         [name, newName],
+//         (error, results) => {
+//             if (error) {
+//                 response.status(500).send(error)
+//                 throw error
+//             }
+//             response.status(200).send({oldName:name, newName:newName})
+//         }
+//     )
+// }
+// const deleteUser = (request, response) => {
+//     const name = String(request.params.name)
+//
+//     pool.query('DELETE FROM users WHERE name = $1', [name], (error, results) => {
+//         if (error) {
+//             response.status(500).send(error)
+//             throw error
+//         }
+//         response.status(200).send({deletedUser:name})
+//     })
+// }
 module.exports = {
     getUsers,
+    getArticles,
+    getArticlesByUserID,
     getUserByName,
     createUser,
     updateUser,
