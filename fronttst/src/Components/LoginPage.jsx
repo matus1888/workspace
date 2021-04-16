@@ -15,7 +15,8 @@ const LoginPage = () => {
                 }
                 // console.log(res.data[0])
                 if (res.data[0]&&res.data[0].password === state.password) {
-                    setState({...state, redirect:true})
+
+                    setState({...state, redirect:true, userId: res.data[0].id})
                     // console.log('пользователь существует и пароль совпал')
                 } else {
                     setState({...state, error: true})
@@ -26,7 +27,7 @@ const LoginPage = () => {
         setState({...state, checked: !state.checked})
     }
     return (<div>
-        {state&&state.redirect&&<Redirect to={'/user_page'}/>}
+        {state&&state.redirect&&<Redirect to={`/user_page/${state.userId} `}/>}
         <div style={{'fontSize':'200%', 'display':'flex','justifyContent':'center', 'margin':10 }}>
             ВХОД</div>
         <div style={{'display': 'grid', 'justifyContent': 'center'}}>

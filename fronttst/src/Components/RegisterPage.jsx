@@ -47,7 +47,7 @@ const RegisterPage = () => {
         }
     }
     return (<div style={{'display': 'grid', 'justifyContent': 'center'}}>
-        {state&&state.login&&<Redirect to={'/user_page'}/>}
+        {state&&state.login&&<Redirect to={`/login`}/>}
         <div className="container">
             <h5>Введите email</h5><input name='email' type="email" onChange={getEmail}/>
             {state?state.busy&&<h6 style={{color:'red'}}>Пользователь с таким email уже существует</h6>:setState({...state, busy:false})}

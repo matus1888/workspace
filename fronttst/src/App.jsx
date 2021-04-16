@@ -13,8 +13,8 @@ function App() {
         <div className={'container'}>
             <Header/>
                      <Switch>
-                <Route exact path="/user_page">
-                    <UserArticles/>
+                <Route  path="/user_page/:id" >
+                    <UserArticles />
                     <hr/>
                 </Route>
                 <Route exact path="/">
