@@ -20,15 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/BulderFields/Previewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/BulderFields/Previewer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/BulderFields/TextEditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/BulderFields/TextEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/BulderFields/converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/builder.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/tst.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,9 @@
       <workItem from="1617726270567" duration="7702000" />
       <workItem from="1618037058435" duration="42199000" />
       <workItem from="1618161365387" duration="3759000" />
-      <workItem from="1618474814871" duration="7544000" />
+      <workItem from="1618474814871" duration="7799000" />
+      <workItem from="1618556163442" duration="4681000" />
+      <workItem from="1618561197629" duration="2073000" />
     </task>
     <servers />
   </component>
@@ -112,9 +115,14 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="1320" height="172" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1618160612057" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618078834869">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="481" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618559742961">
+      <screen x="0" y="0" width="1366" height="732" />
     </state>
+    <state x="481" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.732@0.0.1366.732" timestamp="1618559742961" />
+    <state x="443" y="158" width="672" height="478" key="search.everywhere.popup" timestamp="1618559270726">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="443" y="158" width="672" height="478" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1618559270726" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618078834869" />
   </component>
 </project>

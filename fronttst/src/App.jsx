@@ -6,12 +6,13 @@ import LoginPage from "./Components/LoginPage";
 import HomePage from "./Components/HomePage";
 import Header from "./Components/Header";
 import UserArticles from "./User/UsersArticles";
+import ArticleBuilderPage from "./Components/ArticleBuilderPage";
 
 function App() {
     return (<Router>
         <div className={'container'}>
             <Header/>
-            <Switch>
+                     <Switch>
                 <Route exact path="/user_page">
                     <UserArticles/>
                     <hr/>
@@ -26,6 +27,10 @@ function App() {
                 </Route>
                 <Route path="/login">
                     <LoginPage/>
+                    <hr/>
+                </Route>
+                <Route path="/builder">
+                    <ArticleBuilderPage/>
                     <hr/>
                 </Route>
             </Switch>
