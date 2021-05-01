@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +63,9 @@
       <workItem from="1618561197629" duration="2073000" />
       <workItem from="1618579945051" duration="5855000" />
       <workItem from="1618589307236" duration="3375000" />
+      <workItem from="1618851936388" duration="53000" />
+      <workItem from="1619866355578" duration="2438000" />
+      <workItem from="1619873929886" duration="604000" />
     </task>
     <servers />
   </component>
@@ -97,6 +98,10 @@
     </state>
     <state x="491" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.732@0.0.1366.732" timestamp="1618581080743" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
+    <state x="468" y="124" key="FileChooserDialogImpl" timestamp="1618851993308">
+      <screen x="0" y="0" width="1360" height="732" />
+    </state>
+    <state x="468" y="124" key="FileChooserDialogImpl/0.0.1360.732@0.0.1360.732" timestamp="1618851993308" />
     <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1618160612057">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

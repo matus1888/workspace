@@ -84,17 +84,18 @@ const getArticlesByUserID = (request, response) => {
         response.status(200).json(results.rows)
     })
 }
-// const createUser = (request, response) => {
-//     const name=String(request.params.name)
-//     const pass=String(request.body.password)
-//     pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  pass], (error, results) => {
-//         if (error) {
-//             response.status(500).send(error)
-//             throw error
-//         }
-//         response.status(201).send({isertedName:name})
-//     })
-// }
+const createArticle = (request, response) => {
+    const heading=String(request.body.heading)
+    const userId=String(request.params.userId)
+    const body=String(request.body.body)
+    pool.query('INSERT INTO users (heading, userId, body) VALUES ($1, $2, $3)', [heading,  userId, body], (error, results) => {
+        if (error) {
+            response.status(500).send(error)
+            throw error
+        }
+        response.status(201).send({isertedName:name})
+    })
+}
 // const updateUser = (request, response) => {
 //     const name = String(request.params.name)
 //     const newName= request.body.name
@@ -126,6 +127,7 @@ module.exports = {
     getUsers,
     getArticles,
     getArticlesByUserID,
+    createArticle,
     getUserByName,
     createUser,
     updateUser,
