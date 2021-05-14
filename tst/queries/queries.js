@@ -85,6 +85,15 @@ const getArticlesByUserID = (request, response) => {
         response.status(200).json(results.rows)
     })
 }
+const getArticleByID = (request, response) => {
+    const id = Number(request.params.id)
+    pool.query('SELECT * FROM articles WHERE id = $1 ORDER BY id', [id], (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
 const createArticle = (request, response) => {
     const heading=String(request.body.heading)
     const userId=String(request.params.id)
@@ -135,6 +144,7 @@ module.exports = {
     createArticle,
     updateArticle,
     deleteArticle,
+    getArticleByID,
     getUserByName,
     createUser,
     updateUser,

@@ -7,14 +7,19 @@ import HomePage from "./Components/HomePage";
 import Header from "./Components/Header";
 import UserArticles from "./User/UsersArticles";
 import ArticleBuilderPage from "./Components/ArticleBuilderPage";
+import OneArticle from "./Components/OneArtcle";
 
 function App() {
     return (<Router>
         <div className={'container'}>
             <Header/>
-                     <Switch>
-                <Route  path="/user_page/:id" >
-                    <UserArticles />
+            <Switch>
+                <Route path="/user_page/:id">
+                    <UserArticles/>
+                    <hr/>
+                </Route>
+                <Route path="/one_article/:id">
+                    <OneArticle/>
                     <hr/>
                 </Route>
                 <Route exact path="/">
@@ -29,7 +34,7 @@ function App() {
                     <LoginPage/>
                     <hr/>
                 </Route>
-                <Route path="/builder/:userId" >
+                <Route path="/builder/:userId">
                     <ArticleBuilderPage/>
                     <hr/>
                 </Route>

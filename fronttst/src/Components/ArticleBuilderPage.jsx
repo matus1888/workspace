@@ -9,13 +9,16 @@ const ArticleBuilderPage = (props) => {
     const [state, setState] = useState({})
     const [check,setCheck]=useState(false)
     const [error,setError]=useState(undefined)
+    const [message, setMessage]= useState(undefined)
     const [goHome,setGoHome]=useState(false)
     let {userId} = useParams()
     let getText = (event) => {
+        setMessage(undefined)
         setError(undefined)
         setState({...state, [event.target.name]: event.target.value.toString()})
     }
     let getHeading = (event) => {
+        setMessage(undefined)
         setError(undefined)
         setState({...state, [event.target.id]: event.target.value.toString()})
     }
@@ -27,10 +30,17 @@ const ArticleBuilderPage = (props) => {
             setError(undefined)
             if (check){
                 instance.put(`/articles/${userId}`,{heading: state.heading.trim(), text: state.text.trim()}).then(
-                    (res)=>console.log('Ответ сервера:',res.status, res.data.text))
+                    (res)=> {
+                        console.log('Ответ сервера:', res.status, res.data.text)
+                    ;
+                setMessage('замена произвдена успешно')
+            })
             }else{
                 instance.post(`/articles/${userId}`, {heading: state.heading.trim(), text: state.text.trim()}).then(
-                    (res)=>console.log('Ответ сервера:',res.status, res.data.text)
+                    (res)=> {
+                        console.log('Ответ сервера:', res.status, res.data.text);
+                        setMessage('статья успешно добавлена')
+                    }
                 )
             }
         }else{
@@ -41,6 +51,7 @@ setError('....сначала заполните поля')
         {goHome&&<Redirect to={`/user_page/${userId}`} />}
         <div style={{'margin':'10px','cursor':'pointer','fontWeight':'bold'}} onClick={handleClick}>Перети к моим статьям</div>
         {error&&<div style={{'color':'red'}}>{error}</div>}
+        {message&&<div style={{'color':'green'}}>{message}</div>}
         <span>Заменить статью <input type="checkbox"
         checked={check} onChange={()=>setCheck(!check)}
         /></span>

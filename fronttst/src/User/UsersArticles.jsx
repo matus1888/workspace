@@ -20,25 +20,31 @@ const UserArticles = () => {
             }
         )
     }
+    useEffect(()=>getArt(),[])
     useEffect(() => {
         if (articles.length === 0&&!count) {
-            getArt()
             setCount(true)
         }
-    },[articles.length, count,getArt])
+    },[articles.length, count])
     return (<div className='container'>
         {articles.length === 0 && <div>идет загрузка подождите</div>}
         {state && <Redirect to={`/builder/${id}`}/>}
-        <h2>Ваши статьи</h2>
-        {articles.length !== 0 && articles.map(x => <div key={x.id}> name: {x.heading}
-            <span
-                style={{'color': 'red', 'margin': '20px', 'cursor': 'pointer'}}
-                onClick={() => deleteArt(x)}
-            >  X</span><button className='btn btn-secondary'>Посмотреть</button></div>)}
+        <h2>Ваши статьи</h2><div className={'container align-items-end'} >
+        {articles.length !== 0 && articles.map(x =>
+           <div key={x.id} className={'row'}>
+               <div   className='col'  >
+                   <span className={'col '}>name: {x.heading}</span>
+                   <button  className={'btn btn-danger col'}
+                            onClick={() => deleteArt(x)}
+                   >  X</button><button className='btn btn-secondary col'>Посмотреть</button></div>
+           </div>)}
+
+           </div>
         <button className="btn btn-primary"
                 onClick={() => setState(true)}
         >Создать статью
         </button>
-    </div>)
+    </div>
+        )
 }
 export default UserArticles

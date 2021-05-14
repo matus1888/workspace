@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,7 @@
       <workItem from="1619948061992" duration="29000" />
       <workItem from="1620154932479" duration="9893000" />
       <workItem from="1620306261706" duration="28000" />
-      <workItem from="1620975924669" duration="14193000" />
+      <workItem from="1620975924669" duration="19998000" />
     </task>
     <servers />
   </component>
