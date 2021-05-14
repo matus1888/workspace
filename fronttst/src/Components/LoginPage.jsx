@@ -13,15 +13,15 @@ const LoginPage = () => {
                 if (res.data[0] === undefined) {
                     setState({...state, error: true})
                 }
-                // console.log(res.data[0])
                 if (res.data[0]&&res.data[0].password === state.password) {
-
                     setState({...state, redirect:true, userId: res.data[0].id})
+
                     // console.log('пользователь существует и пароль совпал')
                 } else {
-                    setState({...state, error: true})
+                    setState({...state, error: true, message:'email или пароль неверный'})
                 }
             })
+            .catch(setState({...state,error:true, message:'сервер не прислал ответа'}))
     }
     let check=()=>{
         setState({...state, checked: !state.checked})
@@ -38,7 +38,7 @@ const LoginPage = () => {
                 <h5>Введите пароль</h5><input name='password' type={state.checked?'text':'password'} onChange={getData}/><input style={{'margin':10}} type="checkbox" readOnly onClick={check} checked={state.checked}/>
             </div>
             <div style={{'margin': 10}}>
-                {state && state.error && <div style={{'color': 'red', 'marginBottom': 10}}>email или пароль неверный</div>}
+                {state && state.error && <div style={{'color': 'red', 'marginBottom': 10}}>{state.message}</div>}
                 <button className="btn btn-primary"
                         onClick={clickOnSubmit}
                 >Войти

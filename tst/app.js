@@ -32,8 +32,8 @@ app.delete('/users/:name', db.deleteUser)
 /*API для работы со СТАТЬЯМИ*/
 app.get('/articles', db.getArticles)
 app.get('/articles/:id', db.getArticlesByUserID)
-app.post('/articles/:id', db.createUser)
-// app.put('/articles/:id', db.updateUser)
-// app.delete('/articles/:id', db.deleteUser)
+app.post('/articles/:id', db.createArticle)
+app.put('/articles/:id', db.updateArticle)
+app.delete('/articles/:id', db.deleteArticle)
 
 app.listen(3000)

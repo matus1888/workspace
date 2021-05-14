@@ -21,7 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +50,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,6 +73,11 @@
       <workItem from="1618851936388" duration="53000" />
       <workItem from="1619866355578" duration="2438000" />
       <workItem from="1619873929886" duration="604000" />
+      <workItem from="1619945711466" duration="357000" />
+      <workItem from="1619948061992" duration="29000" />
+      <workItem from="1620154932479" duration="9893000" />
+      <workItem from="1620306261706" duration="28000" />
+      <workItem from="1620975924669" duration="14193000" />
     </task>
     <servers />
   </component>
@@ -98,10 +110,11 @@
     </state>
     <state x="491" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.732@0.0.1366.732" timestamp="1618581080743" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
-    <state x="468" y="124" key="FileChooserDialogImpl" timestamp="1618851993308">
-      <screen x="0" y="0" width="1360" height="732" />
+    <state x="517" y="153" width="424" height="491" key="FileChooserDialogImpl" timestamp="1620306289048">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="468" y="124" key="FileChooserDialogImpl/0.0.1360.732@0.0.1360.732" timestamp="1618851993308" />
+    <state x="517" y="153" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1620306289048" />
     <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1618160612057">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

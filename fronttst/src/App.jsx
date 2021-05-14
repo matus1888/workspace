@@ -29,7 +29,7 @@ function App() {
                     <LoginPage/>
                     <hr/>
                 </Route>
-                <Route path="/builder">
+                <Route path="/builder/:userId" >
                     <ArticleBuilderPage/>
                     <hr/>
                 </Route>
