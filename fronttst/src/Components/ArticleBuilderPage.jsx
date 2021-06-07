@@ -49,13 +49,13 @@ setError('....сначала заполните поля')
     }
     return (<div>
         {goHome&&<Redirect to={`/user_page/${userId}`} />}
-        <div style={{'margin':'10px','cursor':'pointer','fontWeight':'bold'}} onClick={handleClick}>Перети к моим статьям</div>
+        <div  className={'btn btn-primary'} style={{'margin':'10px','cursor':'pointer','fontWeight':'bold'}} onClick={handleClick}>Перети к моим статьям</div>
         {error&&<div style={{'color':'red'}}>{error}</div>}
         {message&&<div style={{'color':'green'}}>{message}</div>}
-        <span>Заменить статью <input type="checkbox"
+        <div style={{'margin-left':'10px'}}>Заменить статью <input type="checkbox"
         checked={check} onChange={()=>setCheck(!check)}
-        /></span>
-            <input style={{'marginLeft': '10px'}}type="text"
+        /></div>
+            <input autoComplete={'off'} style={{'marginLeft': '10px','width':'40vmin'}}type="text"
                    id='heading'
                    placeholder={'Введите пожалуйста заголовок'}
                    onChange={getHeading}
@@ -74,7 +74,7 @@ setError('....сначала заполните поля')
                 <MarkdownView id={'output'} markdown={state.text} options={{emoji: true}}/>
             </span>
             <div>
-                <button onClick={addNewAtricleToDb}>Add this Article</button>
+                <button className={'btn btn-primary'} onClick={addNewAtricleToDb}>Add this Article</button>
             </div>
         </div>
 

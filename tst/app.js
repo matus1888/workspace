@@ -1,6 +1,7 @@
 const express = require('express')
 const logger = require('morgan')
 const cors = require('cors')
+const fs= require('fs');
 const path = require('path');
 const optionFUCKING_CORS = {
     "origin": "*",
@@ -13,6 +14,7 @@ const db = require('./queries/queries.js')
 
 
 /*use middleware to main project*/
+app.use(express.static('public'))
 app.use(cors(optionFUCKING_CORS))
 app.use(express.json({extended: true}))
 app.use(logger('dev'))
@@ -38,3 +40,28 @@ app.put('/articles/:id', db.updateArticle)
 app.delete('/articles/:id', db.deleteArticle)
 
 app.listen(3000)
+
+
+
+
+//example  of logging my express  application
+//     app.use(function(req, res, next) {
+//     console.log("Request IP: " + req.url);
+//     console.log("Request date: " + new Date());
+//     next();
+// });
+//example  of file sender  of my  express application 'static is directory of  uploads  file's '
+// app.use(function(req, res, next) {
+//     let filePath = path.join(__dirname, "static", req.url);
+//     fs.stat(filePath, function(err, fileInfo) {
+//         if (err) {
+//             next();
+//             return;
+//         }
+//         if (fileInfo.isFile()) {
+//             res.sendFile(filePath);
+//         } else {
+//             next();
+//         }
+//     });
+// });

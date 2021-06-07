@@ -3,11 +3,12 @@ import './AppBTSRP.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import RegisterPage from "./Components/RegisterPage";
 import LoginPage from "./Components/LoginPage";
-import HomePage from "./Components/HomePage";
 import Header from "./Components/Header";
 import UserArticles from "./User/UsersArticles";
 import ArticleBuilderPage from "./Components/ArticleBuilderPage";
 import OneArticle from "./Components/OneArtcle";
+import Home from "./Components/homepageVariant/Home";
+import Upload from "./Components/Upload";
 
 function App() {
     return (<Router>
@@ -23,7 +24,7 @@ function App() {
                     <hr/>
                 </Route>
                 <Route exact path="/">
-                    <HomePage/>
+                    <Home/>
                     <hr/>
                 </Route>
                 <Route path="/register">
@@ -37,6 +38,9 @@ function App() {
                 <Route path="/builder/:userId">
                     <ArticleBuilderPage/>
                     <hr/>
+                </Route>
+                <Route path='/upload'>
+                    <Upload/>
                 </Route>
             </Switch>
         </div>

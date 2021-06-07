@@ -6,6 +6,7 @@ import {instance} from "../Components/RegisterPage";
 const UserArticles = () => {
     const [state, setState] = useState(false)
     const [articles, setArticles] = useState([])
+    const [redir,setRedir]= useState(false)
     const [count, setCount]=useState(false)
     let {id} = useParams()
     let getArt = () => {
@@ -15,12 +16,12 @@ const UserArticles = () => {
     }
     let deleteArt = (x) => {
         instance.delete(`/articles/${id}`, {data: {heading: x.heading}}).then(res => {
-                console.log(res.status, res.data.text)
+                // console.log(res.status, res.data.text)
                 getArt()
             }
         )
     }
-    useEffect(()=>getArt(),[])
+    useEffect(getArt,[id])
     useEffect(() => {
         if (articles.length === 0&&!count) {
             setCount(true)
@@ -29,6 +30,8 @@ const UserArticles = () => {
     return (<div className='container'>
         {articles.length === 0 && <div>идет загрузка подождите</div>}
         {state && <Redirect to={`/builder/${id}`}/>}
+            {redir&&<Redirect to={`/one_article/${redir.id}`}/>}
+
         <h2>Ваши статьи</h2><div className={'container align-items-end'} >
         {articles.length !== 0 && articles.map(x =>
            <div key={x.id} className={'row'}>
@@ -36,7 +39,9 @@ const UserArticles = () => {
                    <span className={'col '}>name: {x.heading}</span>
                    <button  className={'btn btn-danger col'}
                             onClick={() => deleteArt(x)}
-                   >  X</button><button className='btn btn-secondary col'>Посмотреть</button></div>
+                   >  X</button><button
+                   onClick={()=>setRedir({id:x.id})}
+                   className='btn btn-secondary col'>Посмотреть</button></div>
            </div>)}
 
            </div>

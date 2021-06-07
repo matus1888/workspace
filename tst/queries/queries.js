@@ -69,7 +69,7 @@ const deleteUser = (request, response) => {
 /*getArticles*/
 
 const getArticles = (request, response) => {
-    pool.query('SELECT * FROM articles ORDER BY id', (error, results) => {
+    pool.query('SELECT * FROM articles ORDER BY id DESC LIMIT 9', (error, results) => {
         if (error) {
             throw error
         }

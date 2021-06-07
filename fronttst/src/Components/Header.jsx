@@ -1,4 +1,6 @@
+import { useLocation } from 'react-router-dom'
 const Header = () => {
+let  path=useLocation().pathname
     return (
         <header><h2>this is my Header component</h2>
             <span>
@@ -7,13 +9,17 @@ const Header = () => {
             <div className="navbar-expand" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">Домой</a>
+                  <a className={`${path==='/'?'nav-link active':'nav-link' }`} aria-current="page" href="/"
+                  >Домой</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/register">Регистрация</a>
+                  <a className={`${path==='/register'?'nav-link active':'nav-link' }`}
+                     href="/register"
+                  >Регистрация</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/login">Войти</a>
+                  <a className={`${path==='/login'?'nav-link active':'nav-link' }`} href="/login"
+                  >Войти</a>
                 </li>
               </ul>
             </div>
