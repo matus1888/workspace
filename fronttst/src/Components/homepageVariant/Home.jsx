@@ -25,7 +25,7 @@ const Home = ()=>{
                             id={'output'}
                                           markdown={x.body}
                                           options={{emoji: true}}/>
-                        <a href={`https://localhost:3001/one_article/${x.id}`} className="btn btn-primary">Просмотреть</a>
+                        <a href={`http://localhost:3001/one_article/${x.id}`} className="btn btn-primary">Просмотреть</a>
                     </div>
                     </div>
             </div>)
