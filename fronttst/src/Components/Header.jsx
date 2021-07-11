@@ -2,10 +2,11 @@ import { useLocation } from 'react-router-dom'
 const Header = () => {
 let  path=useLocation().pathname
     return (
-        <header><h2>this is my Header component</h2>
+        <header>
             <span>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
+              <h2 style={{'marginTop': "0.5rem"}}>	&#9940; IT не торт</h2>
             <div className="navbar-expand" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">

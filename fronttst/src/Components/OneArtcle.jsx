@@ -3,6 +3,7 @@ import MarkdownView from "react-showdown";
 import {instance} from "./RegisterPage";
 import {useParams} from "react-router";
 import {Link} from "react-router-dom";
+import Home from "./homepageVariant/Home";
 
 const OneArticle=()=>{
     //todo key to myArticles
@@ -35,6 +36,7 @@ const OneArticle=()=>{
         <MarkdownView id={'output'}
                       markdown={state.body}
                       options={{emoji: true}}/>
+                      <Home/>
     </div>)
 }
 export default OneArticle

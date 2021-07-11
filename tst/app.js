@@ -3,6 +3,7 @@ const logger = require('morgan')
 const cors = require('cors')
 const fs= require('fs');
 const path = require('path');
+const isDev=require('./ubuntuDeploy/variantsRun/variant')
 const optionFUCKING_CORS = {
     "origin": "*",
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -11,7 +12,7 @@ const optionFUCKING_CORS = {
 }
 const app = express();
 const db = require('./queries/queries.js')
-
+const imitDb = require('./queries/imitDbToDev/imitDb')
 
 /*use middleware to main project*/
 app.use(express.static('public'))
@@ -26,15 +27,16 @@ app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname + '/index.html'))
 })
 
-app.get('/users', db.getUsers)
-app.get('/users/:name', db.getUserByName)
+app.get('/users', isDev?imitDb.getUsers:db.getUsers)
+app.get('/users/:name', isDev? imitDb.getUserByName:db.getUserByName)
 app.post('/users/:name', db.createUser)
 app.put('/users/:name', db.updateUser)
+app.get('/user/:id', isDev?imitDb.getUserById:db.getUserById)
 app.delete('/users/:name', db.deleteUser)
 /*API для работы со СТАТЬЯМИ*/
-app.get('/articles', db.getArticles)
-app.get('/articles/:id', db.getArticlesByUserID)
-app.get('/article/:id', db.getArticleByID)
+app.get('/articles', isDev?imitDb.getArticles:db.getArticles)
+app.get('/articles/:id', isDev?imitDb.getArticlesByUserID:db.getArticlesByUserID)
+app.get('/article/:id', isDev?imitDb.getArticleByID:db.getArticleByID)
 app.post('/articles/:id', db.createArticle)
 app.put('/articles/:id', db.updateArticle)
 app.delete('/articles/:id', db.deleteArticle)

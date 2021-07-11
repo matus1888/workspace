@@ -33,10 +33,10 @@ const LoginPage = () => {
             ВХОД</div>
         <div style={{'display': 'grid', 'justifyContent': 'center'}}>
             <div className="container">
-                <h5>Введите email</h5><input name='email' type="email" onChange={getData}/>
+                <h5>Введите email</h5><input name='email' type="email" style={{"width":"80%"}} onChange={getData}/>
             </div>
             <div className="container mt-2">
-                <h5>Введите пароль</h5><input name='password' type={state.checked?'text':'password'} onChange={getData}/><input style={{'margin':10}} type="checkbox" readOnly onClick={check} checked={state.checked}/>
+                <h5>Введите пароль</h5><input name='password' style={{"width":"80%"}} type={state.checked?'text':'password'} onChange={getData}/><input style={{'margin':10}} type="checkbox" readOnly onClick={check} checked={state.checked}/>
             </div>
             <div style={{'margin': 10}}>
                 {state && state.error && <div style={{'color': 'red', 'marginBottom': 10}}>{state.message}</div>}
