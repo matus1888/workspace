@@ -20,19 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tst/queries/imitDbToDev/imitDb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tst/ubuntuDeploy/variantsRun/variant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tst/ubuntuDeploy/sha.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/images/avatar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/imitDbToDev/imitDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/imitDbToDev/imitDb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +64,7 @@
       <workItem from="1617726270567" duration="7702000" />
       <workItem from="1618037058435" duration="45731000" />
       <workItem from="1619012384034" duration="32000" />
-      <workItem from="1625991882443" duration="18745000" />
+      <workItem from="1625991882443" duration="27605000" />
     </task>
     <servers />
   </component>
@@ -89,10 +84,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625994127682">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626016481202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1625994127682" />
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626016481202" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618042177617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -101,10 +96,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1619012414399" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1626005974927">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1626017455503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626005974927" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626017455503" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618078834869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

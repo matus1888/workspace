@@ -8,12 +8,13 @@ const LoginPage = () => {
         setState({...state, [event.target.name]: event.target.value})
     }
     let clickOnSubmit = () => {
-        instance.get(`users/${state.email}`).then(
+        instance.get(`users/${state.email}/${state.password}`).then(
             (res) => {
+                console.log(res)
                 if (res.data[0] === undefined) {
                     setState({...state, error: true})
                 }
-                if (res.data[0]&&res.data[0].password === state.password) {
+                if (res.data[0]&&res.data[0].password === 'ok') {
                     document.cookie=`{"authorized":true,"userId":${res.data[0].id}}; max-age=300; secure`
                     setState({...state, redirect:true, userId: res.data[0].id})
 

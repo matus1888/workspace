@@ -13,7 +13,6 @@ const optionFUCKING_CORS = {
 const app = express();
 const db = require('./queries/queries.js')
 const imitDb = require('./queries/imitDbToDev/imitDb')
-
 /*use middleware to main project*/
 app.use(express.static('public'))
 app.use(cors(optionFUCKING_CORS))
@@ -29,7 +28,8 @@ app.get('/', (request, response) => {
 
 app.get('/users', isDev?imitDb.getUsers:db.getUsers)
 app.get('/users/:name', isDev? imitDb.getUserByName:db.getUserByName)
-app.post('/users/:name', db.createUser)
+app.get('/users/:name/:pass', isDev? imitDb.getUserByNameWithPass:db.getUserByNameWithPass)
+app.post('/users/:name', isDev?imitDb.createUser:db.createUser)
 app.put('/users/:name', db.updateUser)
 app.get('/user/:id', isDev?imitDb.getUserById:db.getUserById)
 app.delete('/users/:name', db.deleteUser)

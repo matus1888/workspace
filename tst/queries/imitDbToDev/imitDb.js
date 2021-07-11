@@ -1,5 +1,8 @@
+const {Hasher}=require('../../ubuntuDeploy/sha')
+
+
 const tableUsers=[
-    {id: 1, name: "matus" ,avatar :"https://e7.pngegg.com/pngimages/199/296/png-clipart-creative-zebra-avatar-art-colored-glasses.png", password:"cryptedPass"},
+    {id: 1, name: "matus" ,avatar :"https://e7.pngegg.com/pngimages/199/296/png-clipart-creative-zebra-avatar-art-colored-glasses.png", password:"7ca0a0ecb3ad6ac8d82337e88e4586735c7846af0e7216c65b4007c8c9b4115f"},
     {id: 2, name: "atus" ,avatar :"https://cs4.pikabu.ru/images/big_size_comm/2016-01_3/145262076912685629.gif", password:"cryptedPass"},
     {id: 3, name: "patus" ,avatar :"https://cs4.pikabu.ru/images/big_size_comm/2016-01_3/145262076912685629.gif", password:"cryptedPass"},
     {id: 4, name: "batus" ,avatar :null, password:"cryptedPass"}
@@ -273,54 +276,31 @@ const getUserByName = (req, res) => {
     const result=tableUsers.filter(el=>el.name===name)
     res.status(200).json(result)
 }
+const getUserByNameWithPass = (req, res) => {
+    const name = String(req.params.name)
+    const pass= String(req.params.pass)
+    const hashedPass=Hasher(pass)
+    const result=tableUsers.filter(el=>el.name===name)
+    if(result[0].password===hashedPass){
+        let respon=result[0]
+        respon.password='ok'
+        res.status(200).json([respon])
+    }else{
+        res.status(500)
+    }
+}
 const getUserById=(req, res)=>{
     const id = Number(req.params.id)
     const result=tableUsers.filter(el=>el.id===id)
     res.status(200).json(result)
 }
-// const createUser = (request, response) => {
-//     const name=String(request.params.name)
-//     const pass=String(request.body.password)
-//     pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  pass], (error, results) => {
-//         if (error) {
-//             response.status(500).send(error)
-//             throw error
-//         }
-//         response.status(201).send({insertedName:name})
-//     })
-// }
-// const updateUser = (request, response) => {
-//     const name = String(request.params.name)
-//     const newName= request.body.name
-//
-//     pool.query(
-//         'UPDATE users SET name = $1 WHERE name = $2',
-//         [name, newName],
-//         (error, results) => {
-//             if (error) {
-//                 response.status(500).send(error)
-//                 throw error
-//             }
-//             response.status(200).send({oldName:name, newName:newName})
-//         }
-//     )
-// }
-// const deleteUser = (request, response) => {
-//     const name = String(request.params.name)
-//
-//     pool.query('DELETE FROM users WHERE name = $1', [name], (error, results) => {
-//         if (error) {
-//             response.status(500).send(error)
-//             throw error
-//         }
-//         response.status(200).send({deletedUser:name})
-//     })
-// }
-//
-//
-//
-// /*getArticles*/
-//
+const createUser = (request, response) => {
+    const name=String(request.params.name)
+    const pass=String(request.body.password)
+    const cryptoPass=Hasher(pass)
+    response.status(200).json(cryptoPass)
+}
+
 const getArticles = (request, response) => {
         response.status(200).json(tableArticles)
 }
@@ -385,6 +365,8 @@ module.exports = {
     getArticlesByUserID,
     getArticleByID,
     getArticles,
-    getUserById
+    getUserById,
+    createUser,
+    getUserByNameWithPass
 
 }

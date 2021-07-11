@@ -1,3 +1,4 @@
+const {Hasher}=require('../ubuntuDeploy/sha')
 
     const Pool = require('pg').Pool
     const pool = new Pool({
@@ -25,6 +26,21 @@
             response.status(200).json(results.rows)
         })
     }
+    //проверь  на деле
+    const getUserByNameWithPass = (req, res) => {
+        const name = String(req.params.name)
+        const pass= String(req.params.pass)
+        const hashedPass=Hasher(pass)
+        pool.query('SELECT * FROM users WHERE name = $1', [name], (error, results) => {
+            if (error) {
+                throw error
+            }
+            if(results.row[0].password===hashedPass){
+                results.row[0].password='ok'
+            }
+            response.status(200).json(results.rows)
+        })
+    }
 
     const getUserById = (request, response) => {
         const id = String(request.params.id)
@@ -40,7 +56,8 @@
     const createUser = (request, response) => {
         const name=String(request.params.name)
         const pass=String(request.body.password)
-        pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  pass], (error, results) => {
+        const cryptoPass=Hasher(pass)
+        pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  cryptoPass], (error, results) => {
             if (error) {
                 response.status(500).send(error)
                 throw error
@@ -155,6 +172,7 @@
         getArticlesByUserID,
         createArticle,
         updateArticle,
+        getUserByNameWithPass,
         deleteArticle,
         getArticleByID,
         getUserByName,
