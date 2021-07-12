@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +63,7 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="27605000" />
       <workItem from="1626097455188" duration="272000" />
-      <workItem from="1626097988095" duration="4884000" />
+      <workItem from="1626097988095" duration="6451000" />
     </task>
     <servers />
   </component>

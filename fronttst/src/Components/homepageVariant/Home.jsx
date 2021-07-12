@@ -20,12 +20,13 @@ const Home = () => {
             <div className="container mb-3">
                 <h5>Главная заглавная</h5>
             </div>
+            {console.log(users)}
             <div className={'row'} style={{'display': 'flex', 'justifyContent': 'center'}}>
                 {state && users ? state.map(x =>
                         <div key={x.id + x.heading} className={'col-auto'}>
                             <div className="card mb-2" style={{"width": "50vmin"}}>
-                                <img src={users.filter(el => el.id === x.userID)[0]!==undefined?
-                                    users.filter(el => el.id === x.userID)[0].avatar:'noAvatar'}
+                                <img src={users.filter(el => el.id === x.userid)[0]!==undefined?
+                                    users.filter(el => el.id === x.userid)[0].avatar:'noAvatar'}
                                      style={{'width': '80px', 'marginLeft': "0.5rem", 'marginTop': '0.5rem','borderRadius':"30px"}}
                                      className="card-img-top" alt="..."/>
                                 <div className="card-body">

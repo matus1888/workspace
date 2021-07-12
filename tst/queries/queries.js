@@ -35,7 +35,6 @@ const {Hasher}=require('../ubuntuDeploy/sha')
             if (error) {
                 throw error
             }
-            console.log(results.rows[0])
             if(results.rows[0].password===hashedPass){
                 results.rows[0].password='ok'
             }else{
@@ -59,8 +58,9 @@ const {Hasher}=require('../ubuntuDeploy/sha')
     const createUser = (request, response) => {
         const name=String(request.params.name)
         const pass=String(request.body.password)
+        const avatar=String(request.body.avatar)
         const cryptoPass=Hasher(pass)
-        pool.query('INSERT INTO users (name, password) VALUES ($1, $2)', [name,  cryptoPass], (error, results) => {
+        pool.query('INSERT INTO users (name, password, avatar) VALUES ($1, $2, $3)', [name,  cryptoPass, avatar], (error, results) => {
             if (error) {
                 response.status(500).send(error)
                 throw error
