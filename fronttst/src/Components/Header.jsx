@@ -1,4 +1,6 @@
 import { useLocation } from 'react-router-dom'
+import React from 'react'
+
 const Header = () => {
 let  path=useLocation().pathname
     return (
@@ -6,7 +8,7 @@ let  path=useLocation().pathname
             <span>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-              <h2 style={{'marginTop': "0.5rem"}} >	&#9940; IT не торт</h2>
+              <h2 style={{'marginTop': "0.5rem"}} ><span role='img' aria-label='iconNotTort'>&#9940;</span> IT не торт</h2>
             <div className="navbar-expand" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">

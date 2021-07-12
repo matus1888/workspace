@@ -1,6 +1,8 @@
+import React from 'react'
 import {instance} from "../../Components/RegisterPage";
 import {useEffect, useState} from "react";
 import MarkdownView from "react-showdown";
+import Likes from "../likes/Likes";
 
 
 const Home = () => {
@@ -22,7 +24,8 @@ const Home = () => {
                 {state && users ? state.map(x =>
                         <div key={x.id + x.heading} className={'col-auto'}>
                             <div className="card mb-2" style={{"width": "50vmin"}}>
-                                <img src={users.filter(el => el.id === x.userID)[0].avatar}
+                                <img src={users.filter(el => el.id === x.userID)[0]!==undefined?
+                                    users.filter(el => el.id === x.userID)[0].avatar:'noAvatar'}
                                      style={{'width': '80px', 'marginLeft': "0.5rem", 'marginTop': '0.5rem','borderRadius':"30px"}}
                                      className="card-img-top" alt="..."/>
                                 <div className="card-body">
@@ -34,6 +37,7 @@ const Home = () => {
                                                   options={{emoji: true}}/>
                                     <a href={`http://localhost:3001/one_article/${x.id}`} className="btn btn-primary">Читать
                                         целиком</a>
+                                    <Likes articleId=''/>
                                 </div>
                             </div>
                         </div>)

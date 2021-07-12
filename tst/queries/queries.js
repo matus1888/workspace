@@ -26,7 +26,7 @@ const {Hasher}=require('../ubuntuDeploy/sha')
             response.status(200).json(results.rows)
         })
     }
-    //проверь  на деле
+    //Проверил
     const getUserByNameWithPass = (req, res) => {
         const name = String(req.params.name)
         const pass= String(req.params.pass)
@@ -35,10 +35,13 @@ const {Hasher}=require('../ubuntuDeploy/sha')
             if (error) {
                 throw error
             }
-            if(results.row[0].password===hashedPass){
-                results.row[0].password='ok'
+            console.log(results.rows[0])
+            if(results.rows[0].password===hashedPass){
+                results.rows[0].password='ok'
+            }else{
+                results.rows[0].password='notOk'
             }
-            response.status(200).json(results.rows)
+            res.status(200).json(results.rows)
         })
     }
 

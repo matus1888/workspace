@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {instance} from "./RegisterPage";
+import React from 'react';
 import {Redirect} from "react-router";
 
 const LoginPage = () => {
@@ -10,7 +11,6 @@ const LoginPage = () => {
     let clickOnSubmit = () => {
         instance.get(`users/${state.email}/${state.password}`).then(
             (res) => {
-                console.log(res)
                 if (res.data[0] === undefined) {
                     setState({...state, error: true})
                 }

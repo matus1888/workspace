@@ -1,3 +1,4 @@
+import React from 'react'
 import {AxiosInstance as axios} from "axios";
 
 const Upload = () => {

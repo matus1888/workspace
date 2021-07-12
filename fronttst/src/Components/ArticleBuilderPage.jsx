@@ -1,5 +1,6 @@
 import './builder.css'
 import {useState} from "react";
+import React from 'react'
 import MarkdownView from 'react-showdown'
 import {Redirect, useParams} from "react-router";
 import {instance} from "./RegisterPage";
