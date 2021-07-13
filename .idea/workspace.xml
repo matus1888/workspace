@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="" />
+    <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +65,8 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="27605000" />
       <workItem from="1626097455188" duration="272000" />
-      <workItem from="1626097988095" duration="6826000" />
+      <workItem from="1626097988095" duration="7491000" />
+      <workItem from="1626189272220" duration="1054000" />
     </task>
     <servers />
   </component>

@@ -40,7 +40,14 @@ app.get('/article/:id', isDev?imitDb.getArticleByID:db.getArticleByID)
 app.post('/articles/:id', db.createArticle)
 app.put('/articles/:id', db.updateArticle)
 app.delete('/articles/:id', db.deleteArticle)
-//todo endpoints for comments and create table Like and endpoints
+//todo endpoints for comments and likes
+// app.get('/comments/:article')
+// app.post('/comments/:article')
+// app.delete('/comments/:commentID')
+
+// app.get('/likes/:article')
+// app.post('/likes/:article')
+// app.delete('/likes/:commentID')
 
 app.listen(3000)
 

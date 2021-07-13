@@ -183,5 +183,6 @@ const {Hasher}=require('../ubuntuDeploy/sha')
         updateUser,
         deleteUser,
         getUserById,
+        pool
 
     }

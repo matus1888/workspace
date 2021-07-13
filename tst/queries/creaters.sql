@@ -3,6 +3,9 @@ CREATE TABLE articles (id serial PRIMARY KEY, heading varchar(512),body text, us
 CREATE TABLE comments (userID INTEGER REFERENCES users (id)
                         ,articleID INTEGER REFERENCES articles (id)
                         ,date timestamptz, comment text);
+CREATE TABLE likes (articleID INTEGER REFERENCES articles (id)
+                    , userID INTEGER REFERENCES users (id)
+                    , fromUserID INTEGER REFERENCES users(id));
 ALTER TABLE articles ADD COLUMN body text;
 ALTER TABLE users ADD COLUMN avatar text;
 INSERT INTO comments (userID,articleID,date,comment) VALUES (1, 17, now(), 'первый комментарий');
