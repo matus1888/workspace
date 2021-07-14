@@ -1,0 +1,46 @@
+.messageWrapper {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.messageWrapperNo {
+    display: none;
+}
+
+.messageBodyError {
+    margin-top: 30vmin;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #babeb0;
+    text-align: center;
+    width: 40vmin;
+    height: 10vmin;
+}
+.messageBodyMessage {
+    margin-top: 30vmin;
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: #A8E4A0;
+    text-align: center;
+    width: 40vmin;
+    height: 10vmin;
+}
+
+
+.messageHeader {
+    width: 80%;
+    font-size: 130%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.messageContent {
+    margin-top: 10px;
+    font-weight: bold;
+    color: darkred;
+}

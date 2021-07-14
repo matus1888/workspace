@@ -4,6 +4,7 @@ import React from 'react'
 import MarkdownView from 'react-showdown'
 import {Redirect, useParams} from "react-router";
 import {instance} from "./RegisterPage";
+import Message from "./Message/Message";
 
 
 const ArticleBuilderPage = (props) => {
@@ -49,11 +50,12 @@ setError('....сначала заполните поля')
         }
     }
     return (<div>
+        {error&&<Message set={true} header="ОШИБКА" body={error} error={true}/>}
+        {message&&<Message set={true} header="СООБЩЕНИЕ" body={message} />}
         {goHome&&<Redirect to={`/user_page/${userId}`} />}
         <div  className={'btn btn-primary'} style={{'margin':'10px','cursor':'pointer','fontWeight':'bold'}} onClick={handleClick}>Перети к моим статьям</div>
-        {error&&<div style={{'color':'red'}}>{error}</div>}
-        {message&&<div style={{'color':'green'}}>{message}</div>}
-        <div style={{'margin-left':'10px'}}>Заменить статью <input type="checkbox"
+
+        <div style={{'marginLeft':'10px'}}>Заменить статью <input type="checkbox"
         checked={check} onChange={()=>setCheck(!check)}
         /></div>
             <input autoComplete={'off'} style={{'marginLeft': '10px','width':'40vmin'}}type="text"
@@ -75,7 +77,7 @@ setError('....сначала заполните поля')
                 <MarkdownView id={'output'} markdown={state.text} options={{emoji: true}}/>
             </span>
             <div>
-                <button className={'btn btn-primary'} onClick={addNewAtricleToDb}>Add this Article</button>
+                <button className={'btn btn-primary'} onClick={addNewAtricleToDb}>Добавить эту статью</button>
             </div>
         </div>
 

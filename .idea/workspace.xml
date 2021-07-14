@@ -20,19 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings">
-    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,6 +48,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\jetBrains\ideaIU-2020.1.windows\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\workspace\fronttst\src\Components\Message" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -63,10 +68,8 @@
       <workItem from="1617726270567" duration="7702000" />
       <workItem from="1618037058435" duration="45731000" />
       <workItem from="1619012384034" duration="32000" />
-      <workItem from="1625991882443" duration="27605000" />
-      <workItem from="1626097455188" duration="272000" />
-      <workItem from="1626097988095" duration="7491000" />
-      <workItem from="1626189272220" duration="1054000" />
+      <workItem from="1625991882443" duration="29683000" />
+      <workItem from="1626256145936" duration="15903000" />
     </task>
     <servers />
   </component>
@@ -86,10 +89,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626016481202">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626259915594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626016481202" />
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626259915594" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618042177617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -98,10 +101,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1619012414399" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1626017455503">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1626266539809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626017455503" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626266539809" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618078834869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
