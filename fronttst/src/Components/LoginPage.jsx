@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {instance} from "./RegisterPage";
 import React from 'react';
-import {Redirect} from "react-router";
+import {Redirect, withRouter} from "react-router";
 
 const LoginPage = () => {
     const [state, setState] = useState({checked:false})
@@ -50,4 +50,4 @@ const LoginPage = () => {
         </div>
     </div>)
 }
-export default LoginPage
+export default withRouter(LoginPage)

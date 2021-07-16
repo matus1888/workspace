@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import MarkdownView from "react-showdown";
 import {instance} from "./RegisterPage";
-import {useParams} from "react-router";
+import {useParams, withRouter} from "react-router";
 import {Link} from "react-router-dom";
 import Home from "./homepageVariant/Home";
 
@@ -39,4 +39,4 @@ const OneArticle=()=>{
                       <Home/>
     </div>)
 }
-export default OneArticle
+export default withRouter(OneArticle)

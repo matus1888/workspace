@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {Redirect, useParams} from "react-router";
+import {Redirect, useParams, withRouter} from "react-router";
 import {useState} from "react";
 import {instance} from "../Components/RegisterPage";
 
@@ -52,4 +52,4 @@ const UserArticles = () => {
     </div>
         )
 }
-export default UserArticles
+export default withRouter(UserArticles)

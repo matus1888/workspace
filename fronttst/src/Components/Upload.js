@@ -1,5 +1,6 @@
 import React from 'react'
 import {AxiosInstance as axios} from "axios";
+import {withRouter} from "react-router";
 
 const Upload = () => {
     const OnSubmit = (event) => {
@@ -35,4 +36,4 @@ const Upload = () => {
         </form>
     );
 };
- export  default Upload
+ export  default withRouter(Upload)

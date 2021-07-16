@@ -1,8 +1,8 @@
-import {useLocation} from 'react-router-dom'
 import React from 'react'
+import {withRouter} from "react-router";
 
-const Header = () => {
-let  path=useLocation().pathname
+const Header = ({history, location}) => {
+    console.log(location, "history", history)
     return (
         <header>
             <span>
@@ -12,17 +12,24 @@ let  path=useLocation().pathname
             <div className="navbar-expand" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className={`${path==='/'?'nav-link active':'nav-link' }`} aria-current="page" href="/"
-                  >Домой</a>
+                  <span style={{"cursor": "pointer"}}
+                      className={location.pathname==='/'?"nav-link active":"nav-link"}
+                      aria-current="page" onClick={()=>{
+                      history.push('/')
+                  }}
+                  >Домой</span>
                 </li>
                 <li className="nav-item">
-                  <a className={`${path==='/register'?'nav-link active':'nav-link' }`}
-                     href="/register"
-                  >Регистрация</a>
+                    <span style={{"cursor": "pointer"}}
+                    className={location.pathname==='/register'?"nav-link active":"nav-link"}
+                    aria-current="page" onClick={()=>{
+                    history.push('/register')}}>Регистрация</span>
                 </li>
                 <li className="nav-item">
-                  <a className={`${path==='/login'?'nav-link active':'nav-link' }`} href="/login"
-                  >Войти</a>
+                 <span style={{"cursor": "pointer"}}
+                     className={location.pathname==='/login'?"nav-link active":"nav-link"}
+                     aria-current="page" onClick={()=>{
+                     history.push('/login')}}>Войти</span>
                 </li>
               </ul>
             </div>
@@ -33,4 +40,4 @@ let  path=useLocation().pathname
         </header>
     )
 }
-export default Header
+export default withRouter(Header)

@@ -1,4 +1,5 @@
 import React from 'react'
+import {withRouter} from "react-router";
 
 const Links =(props)=>{
     return(<span className='container ma-3'>Like
@@ -6,4 +7,4 @@ const Links =(props)=>{
     </span>)
 }
 
-export default Links
+export default withRouter(Links)

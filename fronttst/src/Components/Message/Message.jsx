@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "./Message.css"
+import {withRouter} from "react-router";
 
 const Message = (props) => {
     const [state,setState]= useState(props.set||false)
@@ -15,4 +16,4 @@ const Message = (props) => {
     )
 }
 
-export default Message
+export default withRouter(Message)

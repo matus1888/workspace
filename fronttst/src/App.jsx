@@ -1,6 +1,6 @@
 import React from 'react'
 import './AppBTSRP.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Route, withRouter} from "react-router";
 import RegisterPage from "./Components/RegisterPage";
 import LoginPage from "./Components/LoginPage";
 import Header from "./Components/Header";
@@ -11,40 +11,18 @@ import Home from "./Components/homepageVariant/Home";
 import Upload from "./Components/Upload";
 
 function App() {
-    return (<Router>
+    return (
         <div className={'container'}>
             <Header/>
-            <Switch>
-                <Route path="/user_page/:id">
-                    <UserArticles/>
-                    <hr/>
-                </Route>
-                <Route path="/one_article/:id">
-                    <OneArticle/>
-                    <hr/>
-                </Route>
-                <Route exact path="/">
-                    <Home/>
-                    <hr/>
-                </Route>
-                <Route path="/register">
-                    <RegisterPage/>
-                    <hr/>
-                </Route>
-                <Route path="/login">
-                    <LoginPage/>
-                    <hr/>
-                </Route>
-                <Route path="/builder/:userId">
-                    <ArticleBuilderPage/>
-                    <hr/>
-                </Route>
-                <Route path='/upload'>
-                    <Upload/>
-                </Route>
-            </Switch>
+                <Route path="/user_page/:id" component={UserArticles}/>
+                <Route path="/one_article/:id" component={OneArticle}/>
+                <Route exact path="/" component={Home}/>
+                <Route path="/register" component={RegisterPage}/>
+                <Route path="/login" component={LoginPage}/>
+                <Route path="/builder/:userId" component={ArticleBuilderPage}/>
+                <Route path='/upload' component={Upload}/>
         </div>
-    </Router>)
+    )
 }
 
-export default App;
+export default withRouter(App);

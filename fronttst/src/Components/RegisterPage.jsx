@@ -1,11 +1,11 @@
 import {useState} from "react";
 import axios from 'axios';
 import React from 'react'
-import {Redirect} from "react-router";
+import {Redirect, withRouter} from "react-router";
 
 export const instance=axios.create({
-
-    baseURL:"http://tst.matus.keenetic.name"
+    baseURL:"https://tst.matus.keenetic.name",
+    headers: {"Access-Control-Allow-Origin": "*"}
 })
 
 const RegisterPage = () => {
@@ -79,4 +79,4 @@ const RegisterPage = () => {
         </div>
     </div>)
 }
-export default RegisterPage
+export default withRouter(RegisterPage)

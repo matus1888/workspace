@@ -2,7 +2,7 @@ import './builder.css'
 import {useState} from "react";
 import React from 'react'
 import MarkdownView from 'react-showdown'
-import {Redirect, useParams} from "react-router";
+import {Redirect, useParams, withRouter} from "react-router";
 import {instance} from "./RegisterPage";
 import Message from "./Message/Message";
 
@@ -86,4 +86,4 @@ setError('....сначала заполните поля')
     </div>)
 
 }
-export default ArticleBuilderPage
+export default withRouter(ArticleBuilderPage)

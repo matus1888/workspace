@@ -3,9 +3,10 @@ import {instance} from "../../Components/RegisterPage";
 import {useEffect, useState} from "react";
 import MarkdownView from "react-showdown";
 import Likes from "../likes/Likes";
+import {withRouter} from "react-router";
 
 
-const Home = () => {
+const Home = ({history}) => {
     const [state, setState] = useState(null)
     const [users, setUsers] = useState(null)
     useEffect(() => {
@@ -36,8 +37,8 @@ const Home = () => {
                                                   id={'output'}
                                                   markdown={x.body}
                                                   options={{emoji: true}}/>
-                                    <a href={`http://localhost:3001/one_article/${x.id}`} className="btn btn-primary">Читать
-                                        целиком</a>
+                                    <button onClick={()=>history.push(`/one_article/${x.id}`)} className="btn btn-primary">Читать
+                                        целиком</button>
                                     <Likes articleId=''/>
                                 </div>
                             </div>
@@ -45,7 +46,7 @@ const Home = () => {
 
                     /*разметка по умолчанию*/
                     : <div>
-                        <div style={{"display": "flex", "justifyContent": "center"}}><h5>Здравствуй, есил тыт тут, то
+                        <div style={{"display": "flex", "justifyContent": "center"}}><h5>Здравствуй, если ты тут, то
                             значит мой комп дома сдох!!!</h5></div>
                         <div style={{"display": "flex", "justifyContent": "center"}}><p
                             style={{"marginLeft": "20px", "color": "red"}}>Сервер на котором лежит база данных
@@ -55,4 +56,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home
+export default  withRouter(Home)

@@ -22,7 +22,17 @@
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ebeejee" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\jetBrains\ideaIU-2020.1.windows\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -97,6 +107,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1626443727031">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1626443727031" />
     <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1626442505459">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
