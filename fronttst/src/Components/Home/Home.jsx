@@ -1,8 +1,8 @@
 import React from 'react'
-import {instance} from "../../Components/RegisterPage";
+import {instance} from "../Register/RegisterPage";
 import {useEffect, useState} from "react";
 import MarkdownView from "react-showdown";
-import Likes from "../likes/Likes";
+import Likes from "../Likes/Likes";
 import {withRouter} from "react-router";
 
 
@@ -21,13 +21,12 @@ const Home = ({history}) => {
             <div className="container mb-3">
                 <h5>Главная заглавная</h5>
             </div>
-            {console.log(users)}
             <div className={'row'} style={{'display': 'flex', 'justifyContent': 'center'}}>
                 {state && users ? state.map(x =>
                         <div key={x.id + x.heading} className={'col-auto'}>
                             <div className="card mb-2" style={{"width": "50vmin"}}>
                                 <img src={users.filter(el => el.id === x.userid)[0]!==undefined?
-                                    users.filter(el => el.id === x.userid)[0].avatar:'noAvatar'}
+                                    users.filter(el => el.id === x.userid)[0].avatar:'https://lumpics.ru/wp-content/uploads/2017/11/Programmyi-dlya-sozdaniya-avatarok.png'}
                                      style={{'width': '80px', 'marginLeft': "0.5rem", 'marginTop': '0.5rem','borderRadius':"30px"}}
                                      className="card-img-top" alt="..."/>
                                 <div className="card-body">

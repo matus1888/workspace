@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import MarkdownView from "react-showdown";
-import {instance} from "./RegisterPage";
+import {instance} from "../Register/RegisterPage";
 import {useParams, withRouter} from "react-router";
 import {Link} from "react-router-dom";
-import Home from "./homepageVariant/Home";
+import Home from "../Home/Home";
 
 const OneArticle=()=>{
     //todo key to myArticles

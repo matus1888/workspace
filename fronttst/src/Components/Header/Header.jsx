@@ -2,7 +2,6 @@ import React from 'react'
 import {withRouter} from "react-router";
 
 const Header = ({history, location}) => {
-    console.log(location, "history", history)
     return (
         <header>
             <span>

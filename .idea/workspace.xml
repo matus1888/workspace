@@ -21,19 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/User/UsersArticles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

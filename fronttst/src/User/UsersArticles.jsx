@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {Redirect, useParams, withRouter} from "react-router";
 import {useState} from "react";
-import {instance} from "../Components/RegisterPage";
+import {instance} from "../Components/Register/RegisterPage";
 
 const UserArticles = () => {
     const [state, setState] = useState(false)

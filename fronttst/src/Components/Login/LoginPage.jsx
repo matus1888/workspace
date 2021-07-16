@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {instance} from "./RegisterPage";
+import {instance} from "../Register/RegisterPage";
 import React from 'react';
 import {Redirect, withRouter} from "react-router";
 

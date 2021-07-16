@@ -3,8 +3,8 @@ import {useState} from "react";
 import React from 'react'
 import MarkdownView from 'react-showdown'
 import {Redirect, useParams, withRouter} from "react-router";
-import {instance} from "./RegisterPage";
-import Message from "./Message/Message";
+import {instance} from "../Register/RegisterPage";
+import Message from "../Message/Message";
 
 
 const ArticleBuilderPage = (props) => {

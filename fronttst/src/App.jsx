@@ -1,13 +1,13 @@
 import React from 'react'
 import './AppBTSRP.css';
 import {Route, withRouter} from "react-router";
-import RegisterPage from "./Components/RegisterPage";
-import LoginPage from "./Components/LoginPage";
-import Header from "./Components/Header";
+import RegisterPage from "./Components/Register/RegisterPage";
+import LoginPage from "./Components/Login/LoginPage";
+import Header from "./Components/Header/Header";
 import UserArticles from "./User/UsersArticles";
-import ArticleBuilderPage from "./Components/ArticleBuilderPage";
-import OneArticle from "./Components/OneArtcle";
-import Home from "./Components/homepageVariant/Home";
+import ArticleBuilderPage from "./Components/BuilderPage/ArticleBuilderPage";
+import OneArticle from "./Components/OneArticle/OneArtcle";
+import Home from "./Components/Home/Home";
 import Upload from "./Components/Upload";
 
 function App() {
