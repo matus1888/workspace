@@ -20,18 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,6 +97,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
+    <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1626442505459">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1626442505459" />
+    <state width="1248" height="172" key="GridCell.Tab.0.center" timestamp="1626442505458">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
+    <state width="1248" height="172" key="GridCell.Tab.0.left" timestamp="1626442505458">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
+    <state width="1248" height="172" key="GridCell.Tab.0.right" timestamp="1626442505458">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
     <state x="342" y="203" key="new project wizard" timestamp="1619012414399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

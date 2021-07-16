@@ -5,7 +5,7 @@ import {Redirect} from "react-router";
 
 export const instance=axios.create({
 
-    baseURL:"http://localhost:3000"
+    baseURL:"http://tst.matus.keenetic.name"
 })
 
 const RegisterPage = () => {
