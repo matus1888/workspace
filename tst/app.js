@@ -4,6 +4,7 @@ const cors = require('cors')
 const fs= require('fs');
 const path = require('path');
 const isDev=require('./ubuntuDeploy/variantsRun/variant')
+const dbCL=require('./queries/queriesCommentsAndLikes')
 const optionFUCKING_CORS = {
     "origin": "*",
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -41,11 +42,14 @@ app.post('/articles/:id', db.createArticle)
 app.put('/articles/:id', db.updateArticle)
 app.delete('/articles/:id', db.deleteArticle)
 //todo endpoints for comments and likes
-// app.get('/comments/:article')
-// app.post('/comments/:article')
-// app.delete('/comments/:commentID')
+app.get('/comments/:article', dbCL.getComments)
+app.post('/comments/:article', dbCL.createComment)
+app.get('/commentsMitUsers/:article',dbCL.getCommentsMitUsers)
+app.put('/comments/:article',dbCL.updateComment)
+app.delete('/comments', dbCL.deleteComment)
 
 // app.get('/likes/:article')
+// app.put('/likes/:article')
 // app.post('/likes/:article')
 // app.delete('/likes/:commentID')
 

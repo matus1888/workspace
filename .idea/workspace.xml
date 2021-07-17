@@ -20,14 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArtcle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/homepageVariant/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Login/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Login/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArticle/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArticle/OneArtcle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +79,7 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
+      <workItem from="1626506439293" duration="19932000" />
     </task>
     <servers />
   </component>
@@ -93,14 +99,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626259915594">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626511898027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626259915594" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618042177617">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626511898027" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626521264757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618042177617" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626521264757" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1626443727031">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -129,9 +135,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626266539809" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1618078834869">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626524060784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618078834869" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626524060784" />
   </component>
 </project>

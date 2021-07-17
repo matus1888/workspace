@@ -15,7 +15,7 @@ const LoginPage = () => {
                     setState({...state, error: true})
                 }
                 if (res.data[0]&&res.data[0].password === 'ok') {
-                    document.cookie=`{"authorized":true,"userId":${res.data[0].id}}; max-age=300; secure`
+                    document.cookie=`{"authorized":true,"userId":${res.data[0].id}}; max-age=3000; secure`
                     setState({...state, redirect:true, userId: res.data[0].id})
 
                     // console.log('пользователь существует и пароль совпал')
