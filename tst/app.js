@@ -5,6 +5,11 @@ const fs= require('fs');
 const path = require('path');
 const isDev=require('./ubuntuDeploy/variantsRun/variant')
 const dbCL=require('./queries/queriesCommentsAndLikes')
+const multer  = require("multer");
+
+const upload = multer({dest:"uploads"});
+
+
 const optionFUCKING_CORS = {
     "origin": "*",
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -16,6 +21,7 @@ const db = require('./queries/queries.js')
 const imitDb = require('./queries/imitDbToDev/imitDb')
 /*use middleware to main project*/
 app.use(express.static('public'))
+app.use(express.static('uploads'))
 app.use(cors(optionFUCKING_CORS))
 app.use(express.json({extended: true}))
 app.use(logger('dev'))
@@ -59,29 +65,17 @@ app.post('/dislikes/:article', dbCL.setDisLike)
 app.get('/dislike/:article/:fromUserID',dbCL.getDisLike)
 app.delete('/dislikes/:article/:fromUserID/:userID',dbCL.deleteDisLike)
 
+
+//file downloader
+app.post('/upload', upload.single('avatar'), function (req, res, next) {
+    res.status(200).json(req.file.filename)
+    next()
+    // req.file is the `avatar` file
+    // req.body will hold the text fields, if there were any
+})
+
 app.listen(3000)
 
 
 
 
-//example  of logging my express  application
-//     app.use(function(req, res, next) {
-//     console.log("Request IP: " + req.url);
-//     console.log("Request date: " + new Date());
-//     next();
-// });
-//example  of file sender  of my  express application 'static is directory of  uploads  file's '
-// app.use(function(req, res, next) {
-//     let filePath = path.join(__dirname, "static", req.url);
-//     fs.stat(filePath, function(err, fileInfo) {
-//         if (err) {
-//             next();
-//             return;
-//         }
-//         if (fileInfo.isFile()) {
-//             res.sendFile(filePath);
-//         } else {
-//             next();
-//         }
-//     });
-// });

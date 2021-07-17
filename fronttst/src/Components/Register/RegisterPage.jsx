@@ -2,14 +2,18 @@ import {useState} from "react";
 import axios from 'axios';
 import React from 'react'
 import {Redirect, withRouter} from "react-router";
+import Upload from "../Upload";
 
+// const devPass="http://localhost:3000"
+const deployPass="https://tst.matus.keenetic.name"
 export const instance=axios.create({
-    baseURL:"https://tst.matus.keenetic.name",
+    baseURL:deployPass,
     headers: {"Access-Control-Allow-Origin": "*"}
 })
 
 const RegisterPage = () => {
     const [state, setState] = useState({checked:false})
+    console.log(state)
     let reg = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
     let check=()=>{
         setState({...state, checked: !state.checked})
@@ -17,8 +21,8 @@ const RegisterPage = () => {
     let getEmail = (event) => {
         setState({...state, [event.target.name]: event.target.value})
     }
-    let getAvaLink = (event) => {
-        setState({...state, [event.target.name]: event.target.value})
+    let getAvaLink = (link) => {
+        setState({...state, ava:link})
     }
     let getPassword = (event) => {
         setState({...state, [event.target.name]: event.target.value})
@@ -68,7 +72,7 @@ const RegisterPage = () => {
             <h5>Повторите пароль</h5><input name='confirmPass' style={{"width":"80%"}}  type={state.checked?'text':'password'} onChange={getConfirmPass}/>
         </div>
         <div className="container">
-            <h5>Ссылка на аватар</h5><input name='ava' style={{"width":"80%"}} type="text" onChange={getAvaLink}/>
+            <Upload getter={getAvaLink}/>
         </div>
         {state?state.notEquals&&<h6 style={{color:'red'}}>Пароли  не совпадают</h6>:setState({...state, busy:false})}
         <div style={{'margin': 10}}>
