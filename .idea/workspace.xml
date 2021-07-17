@@ -20,24 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.4b34c5f2.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.4b34c5f2.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/3.4a1da598.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/3.4a1da598.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.7ab61d24.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.7ab61d24.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/runtime-main.08d16917.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/runtime-main.08d16917.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.a07b43b1.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.a07b43b1.chunk.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
-      <workItem from="1626506439293" duration="42019000" />
+      <workItem from="1626506439293" duration="42694000" />
     </task>
     <servers />
   </component>
