@@ -35,7 +35,6 @@ const {Hasher}=require('../ubuntuDeploy/sha')
             if (error) {
                 throw error
             }
-            console.log(results)
             if(results.rowCount===0){
                 res.status(200).json({error:"user is defined"})
             } else{

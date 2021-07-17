@@ -19,11 +19,10 @@ const Comments = (props) => {
     const getCommentsOfArticle = () => {
         instance.get(`/commentsMitUsers/${props.articleID}`).then(res => setState(res.data)).catch(e => console.log(e))
     }
-    useEffect(getCommentsOfArticle, [props.articleID])
+    useEffect(getCommentsOfArticle, [props.articleID,update])
     let getText = (event) => {
         setText({...text, [event.target.name]: event.target.value.toString()})
     }
-    useEffect(getCommentsOfArticle,[update])
     return (
         <div className="container bg-body ma-3"> Комментарии
             {state && state.map(x => <div key={x.name + Math.random() * 90}>

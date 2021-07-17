@@ -48,10 +48,16 @@ app.get('/commentsMitUsers/:article',dbCL.getCommentsMitUsers)
 app.put('/comments/:article',dbCL.updateComment)
 app.delete('/comments', dbCL.deleteComment)
 
-// app.get('/likes/:article')
-// app.put('/likes/:article')
-// app.post('/likes/:article')
-// app.delete('/likes/:commentID')
+app.get('/likes/:article',dbCL.getLikes)
+app.post('/likes/:article', dbCL.setLike)
+app.get('/like/:article/:fromUserID',dbCL.getLike)
+app.delete('/likes/:article/:fromUserID/:userID',dbCL.deleteLike)
+
+
+app.get('/dislikes/:article',dbCL.getDisLikes)
+app.post('/dislikes/:article', dbCL.setDisLike)
+app.get('/dislike/:article/:fromUserID',dbCL.getDisLike)
+app.delete('/dislikes/:article/:fromUserID/:userID',dbCL.deleteDisLike)
 
 app.listen(3000)
 

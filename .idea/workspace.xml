@@ -20,20 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.fd7e4749.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.fd7e4749.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.3115d191.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.3115d191.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.3115d191.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/3.0f3d88cd.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/3.0f3d88cd.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.d703dc3f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.d703dc3f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/runtime-main.f4e039d2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/runtime-main.f4e039d2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/0.65a07742.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/0.65a07742.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.033dcee5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.033dcee5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +83,7 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
-      <workItem from="1626506439293" duration="22317000" />
+      <workItem from="1626506439293" duration="30966000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,11 @@ export const Context=React.createContext({})
 const Home = ({history}) => {
     const [state, setState] = useState(null)
     const [users, setUsers] = useState(null)
+
+
+    // console.log('state Home', state)
+
+
     useEffect(() => {
         instance(`/users`).then(res => {
             setUsers(res.data)
@@ -40,7 +45,7 @@ const Home = ({history}) => {
                                                           options={{emoji: true}}/>
                                             <button onClick={()=>history.push(`/one_article/${x.id}`)} className="btn btn-primary">Читать
                                                 целиком</button>
-                                            <Likes articleID={x.id}/>
+                                            <Likes articleID={x.id} userID={x.userid}/>
                                         </div>
                                     </div>
                                 </div>)

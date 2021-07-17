@@ -8,6 +8,10 @@ CREATE TABLE likes (id serial PRIMARY KEY
                         , articleID INTEGER REFERENCES articles (id)
                         , userID INTEGER REFERENCES users (id)
                         , fromUserID INTEGER REFERENCES users(id));
+CREATE TABLE dislikes (id serial PRIMARY KEY
+                        , articleID INTEGER REFERENCES articles (id)
+                        , userID INTEGER REFERENCES users (id)
+                        , fromUserID INTEGER REFERENCES users(id));
 ALTER TABLE articles ADD COLUMN body text;
 ALTER TABLE users ADD COLUMN avatar text;
 ALTER TABLE comments ADD COLUMN id serial PRIMARY KEY;
