@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Login/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Login/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/OneArticle/OneArtcle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/OneArticle/OneArtcle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
       <workItem from="1619012384034" duration="32000" />
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
-      <workItem from="1626506439293" duration="19932000" />
+      <workItem from="1626506439293" duration="21962000" />
     </task>
     <servers />
   </component>

@@ -35,12 +35,16 @@ const {Hasher}=require('../ubuntuDeploy/sha')
             if (error) {
                 throw error
             }
+            console.log(results)
+            if(results.rowCount===0){
+                res.status(200).json({error:"user is defined"})
+            } else{
             if(results.rows[0].password===hashedPass){
                 results.rows[0].password='ok'
             }else{
                 results.rows[0].password='notOk'
             }
-            res.status(200).json(results.rows)
+                res.status(200).json(results.rows)}
         })
     }
 
