@@ -20,18 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.f0a5a3ee.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.a07b43b1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.a07b43b1.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ebeejee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\jetBrains\ideaIU-2020.1.windows\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -79,6 +74,7 @@
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
       <workItem from="1626506439293" duration="42694000" />
+      <workItem from="1626612398686" duration="7956000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,8 @@ import React from 'react'
 import {withRouter} from "react-router";
 
 const Header = ({history, location}) => {
+    let cookie = ''
+    document.cookie === '' ? cookie = '{"authorized":false}' : cookie = JSON.parse(document.cookie)
     return (
         <header>
             <span>
@@ -14,10 +16,16 @@ const Header = ({history, location}) => {
                   <span style={{"cursor": "pointer"}}
                       className={location.pathname==='/'?"nav-link active":"nav-link"}
                       aria-current="page" onClick={()=>{
-                      history.push('/')
-                  }}
+                      history.push('/')}}
                   >Домой</span>
                 </li>
+                  {cookie.authorized&&<li className="nav-item">
+                  <span style={{"cursor": "pointer"}}
+                        className={location.pathname==='/profile'?"nav-link active":"nav-link"}
+                        aria-current="page" onClick={()=>{
+                      history.push('/profile')
+                  }}
+                  >Моя страница</span></li>}
                 <li className="nav-item">
                     <span style={{"cursor": "pointer"}}
                     className={location.pathname==='/register'?"nav-link active":"nav-link"}
@@ -27,8 +35,13 @@ const Header = ({history, location}) => {
                 <li className="nav-item">
                  <span style={{"cursor": "pointer"}}
                      className={location.pathname==='/login'?"nav-link active":"nav-link"}
-                     aria-current="page" onClick={()=>{
-                     history.push('/login')}}>Войти</span>
+                     aria-current="page"
+                       onClick={cookie.authorized
+                           ?()=>{history.push('')
+                               document.cookie=`{authorized:false,"userId":1}; max-age=0; secure`
+                       }
+                           :()=>{history.push('/login')
+                       }}>{cookie.authorized?'Выйти':'Войти'}</span>
                 </li>
               </ul>
             </div>

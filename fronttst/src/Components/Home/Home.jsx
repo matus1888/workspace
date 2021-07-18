@@ -13,9 +13,7 @@ const Home = ({history}) => {
     const [state, setState] = useState(null)
     const [users, setUsers] = useState(null)
 
-
     // console.log('state Home', state)
-
 
     useEffect(() => {
         instance(`/users`).then(res => {
@@ -44,7 +42,12 @@ const Home = ({history}) => {
                                                           id={'output'}
                                                           markdown={x.body}
                                                           options={{emoji: true}}/>
-                                            <button onClick={()=>history.push(`/one_article/${x.id}`)} className="btn btn-primary">Читать
+                                            <button onClick={
+                                                ()=> {
+                                                    history.push(`/one_article/${x.id}`)
+                                                    window.scroll(0,0)
+                                                }
+                                            } className="btn btn-primary">Читать
                                                 целиком</button>
                                             <Likes articleID={x.id} userID={x.userid}/>
                                         </div>

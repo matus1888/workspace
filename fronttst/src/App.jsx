@@ -9,6 +9,7 @@ import ArticleBuilderPage from "./Components/BuilderPage/ArticleBuilderPage";
 import OneArticle from "./Components/OneArticle/OneArtcle";
 import Home from "./Components/Home/Home";
 import Upload from "./Components/Upload";
+import Profile from "./Components/ProfilePage/Profile";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/login" component={LoginPage}/>
                 <Route path="/builder/:userId" component={ArticleBuilderPage}/>
                 <Route path='/upload' component={Upload}/>
+                <Route path='/profile' component={Profile}/>
         </div>
     )
 }

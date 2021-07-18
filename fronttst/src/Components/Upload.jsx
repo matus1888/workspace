@@ -29,9 +29,9 @@ const Upload =(props)=>{
 
         // Request made to the backend api
         // Send formData object
-        axios.post("http://localhost:3000/upload", formData).then(res=> {
-            props.getter('http://localhost:3000/'+res.data)
-            setImage('http://localhost:3000/'+res.data)
+        axios.post("https://tst.matus.keenetic.name/upload", formData).then(res=> {
+            props.getter('https://tst.matus.keenetic.name/'+res.data)
+            setImage('https://tst.matus.keenetic.name'+res.data)
             console.log(res.data)
         }).catch(e=>{console.log(e)});
     };

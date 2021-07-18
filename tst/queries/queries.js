@@ -73,17 +73,18 @@ const {Hasher}=require('../ubuntuDeploy/sha')
     }
     const updateUser = (request, response) => {
         const name = String(request.params.name)
-        const newName= request.body.name
+        const newName = request.body.newName
+        const avatar = request.body.avatar
 
         pool.query(
-            'UPDATE users SET name = $1 WHERE name = $2',
-            [name, newName],
+            'UPDATE users SET name = $1, avatar = $2 WHERE name = $3',
+            [newName, avatar, name],
             (error, results) => {
                 if (error) {
                     response.status(500).send(error)
                     throw error
                 }
-                response.status(200).send({oldName:name, newName:newName})
+                response.status(200).json(results)
             }
         )
     }
