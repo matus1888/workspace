@@ -105,7 +105,11 @@ const {Hasher}=require('../ubuntuDeploy/sha')
     /*getArticles*/
 
     const getArticles = (request, response) => {
-        pool.query('SELECT * FROM articles ORDER BY id DESC LIMIT 9', (error, results) => {
+        const page = request.params.page
+        const limit = page*10
+        const offset = (page*10)-10
+        console.log('offset=',offset,'limit=', limit)
+        pool.query('SELECT * FROM articles ORDER BY id DESC LIMIT $1 OFFSET $2', [limit, offset], (error, results) => {
             if (error) {
                 throw error
             }
@@ -136,7 +140,7 @@ const {Hasher}=require('../ubuntuDeploy/sha')
         const text=String(request.body.text)
         // console.log(userId,',heading:',heading, ',text:',text)
 
-        pool.query('INSERT INTO articles (heading, userid, body) VALUES ($1, $2, $3)', [heading,  userId, text], (error, results) => {
+        pool.query('INSERT INTO articles (heading, userid, body, date) VALUES ($1, $2, $3, now())', [heading,  userId, text], (error, results) => {
             if (error) {
                 response.status(500).send(error)
                 throw error
@@ -150,7 +154,7 @@ const {Hasher}=require('../ubuntuDeploy/sha')
         const text=String(request.body.text)
 
         pool.query(
-            'UPDATE articles SET userid=$2, body=$3 WHERE heading = $1',
+            'UPDATE articles SET userid=$2, body=$3 WHERE heading = $1, date=now()',
             [heading,  userId, text],
             (error, results) => {
                 if (error) {

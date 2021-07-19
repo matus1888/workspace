@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {instance} from "../Register/RegisterPage";
+import Parse from '../../LogicComponents/ParserDate'
 
 const Comments = (props) => {
     const [state, setState] = useState(undefined)
@@ -28,9 +29,9 @@ const Comments = (props) => {
             {state && state.map(x => <div key={x.name + Math.random() * 90}>
                 <div className="container">
                     <img style={{"width": "20px"}} src={x.avatar} alt=""/>{x.name}
+                    <span>{Parse(x.date)}</span>
                 </div>
                 <span className="container ma-3">{x.comment}</span>
-
             </div>)}
             {cookie.authorized &&
             <button className="btn-primary" onClick={() => setEnable(!enable)}>Добавить комментарий</button>}

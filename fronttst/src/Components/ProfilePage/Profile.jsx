@@ -27,14 +27,11 @@ const Profile=()=>{
     }
     useEffect(getMyData,[cookie.userId, updater])
     return(<div>
-            Profile Paige
             {state&&<div>
-                <div>Адрес картинки: {state[state.length-1].avatar}</div>
                 <img style={{"width":"80px"}} src={state[state.length-1].avatar} alt="ava"/>
                 <button className="btn btn-primary"
                         onClick={()=>setChange(!change)}>Сменить аватар</button>
                 {change&&<Upload getter={setFile}/>}
-                <div>идентификатор: {state[state.length-1].id}</div>
                 <div>имя: {state[state.length-1].name}</div>
                 <button className="btn btn-danger" onClick={setData}>Сохранить</button>
             </div>}

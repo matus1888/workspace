@@ -1,11 +1,10 @@
 const express = require('express')
 const logger = require('morgan')
 const cors = require('cors')
-const fs= require('fs');
-const path = require('path');
+const path = require('path')
 const isDev=require('./ubuntuDeploy/variantsRun/variant')
 const dbCL=require('./queries/queriesCommentsAndLikes')
-const multer  = require("multer");
+const multer  = require(`multer`);
 
 const upload = multer({dest:"uploads"});
 
@@ -41,7 +40,7 @@ app.put('/users/:name', db.updateUser)
 app.get('/user/:id', isDev?imitDb.getUserById:db.getUserById)
 app.delete('/users/:name', db.deleteUser)
 /*API для работы со СТАТЬЯМИ*/
-app.get('/articles', isDev?imitDb.getArticles:db.getArticles)
+app.get('/articles/:page', isDev?imitDb.getArticles:db.getArticles)
 app.get('/articles/:id', isDev?imitDb.getArticlesByUserID:db.getArticlesByUserID)
 app.get('/article/:id', isDev?imitDb.getArticleByID:db.getArticleByID)
 app.post('/articles/:id', db.createArticle)

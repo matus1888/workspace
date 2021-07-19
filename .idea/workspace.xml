@@ -20,12 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/LogicComponents/ParserDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.797eec48.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.797eec48.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/fileLoader/fileLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fronttst/src/LogicComponents" />
       <recent name="C:\dev\workspace\fronttst\src\Components\Message" />
     </key>
   </component>
@@ -74,7 +85,8 @@
       <workItem from="1625991882443" duration="29683000" />
       <workItem from="1626256145936" duration="15903000" />
       <workItem from="1626506439293" duration="42694000" />
-      <workItem from="1626612398686" duration="7956000" />
+      <workItem from="1626612398686" duration="9134000" />
+      <workItem from="1626702158430" duration="5980000" />
     </task>
     <servers />
   </component>
@@ -130,9 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626550253236" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626524060784">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="492" y="187" width="672" height="484" key="search.everywhere.popup" timestamp="1626704739861">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1626524060784" />
+    <state x="492" y="187" width="672" height="484" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1626704739861" />
   </component>
 </project>

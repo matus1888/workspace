@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, {useState} from 'react';
 import {withRouter} from "react-router";
+import {URL} from './Register/RegisterPage'
+
 
 const Upload =(props)=>{
     const [state, setState] = useState({selectedFile: null})
@@ -29,9 +31,9 @@ const Upload =(props)=>{
 
         // Request made to the backend api
         // Send formData object
-        axios.post("https://tst.matus.keenetic.name/upload", formData).then(res=> {
-            props.getter('https://tst.matus.keenetic.name/'+res.data)
-            setImage('https://tst.matus.keenetic.name'+res.data)
+        axios.post(`${URL}/upload`, formData).then(res=> {
+            props.getter(`${URL}/`+res.data)
+            setImage(`${URL}/`+res.data)
             console.log(res.data)
         }).catch(e=>{console.log(e)});
     };

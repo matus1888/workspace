@@ -4,10 +4,10 @@ import React from 'react'
 import {Redirect, withRouter} from "react-router";
 import Upload from "../Upload";
 
-const devPass="http://localhost:3000"
-// const deployPass="https://tst.matus.keenetic.name"
+export const URL="http://localhost:3000"
+// export const devPath="https://tst.matus.keenetic.name"
 export const instance=axios.create({
-    baseURL:devPass,
+    baseURL: URL,
     headers: {"Access-Control-Allow-Origin": "*"}
 })
 
