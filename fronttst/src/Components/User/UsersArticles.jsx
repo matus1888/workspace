@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {Redirect, useParams, withRouter} from "react-router";
 import {useState} from "react";
-import {instance} from "../Components/Register/RegisterPage";
+import {instance} from "../Register/RegisterPage";
 
 const UserArticles = () => {
     const [state, setState] = useState(false)
@@ -10,7 +10,7 @@ const UserArticles = () => {
     const [count, setCount]=useState(false)
     let {id} = useParams()
     let getArt = () => {
-        instance.get(`/articles/${id}`).then((res) => {
+        instance.get(`/myArticles/${id}`).then((res) => {
             setArticles(res.data)
         })
     }

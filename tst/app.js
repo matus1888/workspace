@@ -41,7 +41,7 @@ app.get('/user/:id', isDev?imitDb.getUserById:db.getUserById)
 app.delete('/users/:name', db.deleteUser)
 /*API для работы со СТАТЬЯМИ*/
 app.get('/articles/:page', isDev?imitDb.getArticles:db.getArticles)
-app.get('/articles/:id', isDev?imitDb.getArticlesByUserID:db.getArticlesByUserID)
+app.get('/myArticles/:id', isDev?imitDb.getArticlesByUserID:db.getArticlesByUserID)
 app.get('/article/:id', isDev?imitDb.getArticleByID:db.getArticleByID)
 app.post('/articles/:id', db.createArticle)
 app.put('/articles/:id', db.updateArticle)
