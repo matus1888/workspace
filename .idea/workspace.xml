@@ -20,23 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/LogicComponents/ParserDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.797eec48.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/css/main.797eec48.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/main.4df395f0.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/image.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Likes/Likes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/ProfilePage/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Upload.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Upload.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/fileLoader/fileLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/creaters.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/creaters.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queriesCommentsAndLikes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +76,7 @@
       <workItem from="1626256145936" duration="15903000" />
       <workItem from="1626506439293" duration="42694000" />
       <workItem from="1626612398686" duration="9134000" />
-      <workItem from="1626702158430" duration="5980000" />
+      <workItem from="1626702158430" duration="11665000" />
     </task>
     <servers />
   </component>

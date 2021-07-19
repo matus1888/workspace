@@ -9,7 +9,7 @@ const Profile=()=>{
     const [change,setChange]= useState(false)
     const [file,setFile]= useState(null)
     const [updater,setUpdater]=useState(false)
-    console.log(file)
+    // console.log(file)
     const setData=()=>{
         instance.put(`/users/${state[state.length-1].name}`
             , {newName:state[state.length-1].name,avatar:file?file:state[state.length-1].avatar})

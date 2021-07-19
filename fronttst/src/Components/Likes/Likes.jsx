@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {withRouter} from "react-router";
 import {instance} from '../Register/RegisterPage'
+import './Likes.css'
 
 const Likes = (props) => {
     const [likes, setLikes] = useState(null)
@@ -37,7 +38,7 @@ const Likes = (props) => {
             {userID:props.userID,fromUserID:cookie.userId})
             .then(r=> {
                 setUpdate(!update)
-                console.log(r.data)
+                // console.log(r.data)
             }).catch(e=>console.log(e))
     }
     const setUnLike=()=>{
@@ -65,10 +66,14 @@ const Likes = (props) => {
     }
     const checkID=(cookie.userId===props.userID)
     return (<div>
-        {cookie.authorized&&<div>
+        {cookie.authorized&&<div className="likesBlock container">
             {/*{`checkID${checkID}already${already}`}*/}
-            <button disabled={checkID} onClick={!already?setLike:setUnLike} className='container ma-3'>like {likes}</button>
-            <button disabled={checkID} onClick={!alreadyDis?setDisLike:setUnDisLike} className="container ma-3">Dislike {dislikes}</button>
+            <span disabled={checkID}
+                  onClick={!already?setLike:setUnLike}
+                  className='like'>&#10084; {likes}</span>
+            <span disabled={checkID}
+                  onClick={!alreadyDis?setDisLike:setUnDisLike}
+                  className="dislike">&#128078; {dislikes}</span>
         </div>}
     </div>)
 }

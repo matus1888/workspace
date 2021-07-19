@@ -29,8 +29,7 @@ const createComment = (request, response) => {
     const comment = String(request.body.comment)
     pool.query('INSERT INTO comments (userID,articleID,date,comment) VALUES ($1,$2, now(), $3)', [userID, articleID, comment], (error, results) => {
         if (error) {
-            response.status(500).send(error)
-            throw error
+            response.status(200).json({error:"badRequest"})
         }
         response.status(201).send({addedComment: comment})
     })

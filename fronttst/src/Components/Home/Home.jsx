@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import MarkdownView from "react-showdown";
 import Likes from "../Likes/Likes";
 import {withRouter} from "react-router";
-import './image.css'
+import './Home.css'
 import Parser from '../../LogicComponents/ParserDate'
 
 
@@ -16,7 +16,7 @@ const Home = ({history}) => {
     const [paginate, setPaginate] = useState(1)
     const [limit, setLimit]= useState(false)
 
-    console.log('state Home', state)
+    // console.log('state Home', state)
 
     useEffect(() => {
         instance(`/users`).then(res => {
@@ -26,17 +26,20 @@ const Home = ({history}) => {
             setState(res.data)
             if(res.data.length===0){
                 setLimit(true)
-                setPaginate(paginate-1)}
+                setPaginate(paginate-1)
+            }else if(res.data.length<10){
+                setLimit(true)
+            }
         }).catch((error) => console.log(error))
     }, [paginate])
     return (<div>
                 <div className="container mb-3">
                     <h5>Главная заглавная</h5>
                 </div>
-                <div className={'row'} style={{'display': 'flex', 'justifyContent': 'center'}}>
+                <div className="row homeRow" >
                     {state && users ? state.map(x =>
-                                <div key={x.id + x.heading} className={'col-auto'}>
-                                    <div className="card mb-2" style={{"width": "35vmin"}}>
+                                <div key={x.id + x.heading} className='homeColumn'>
+                                    <div className="card mb-2 homeCard" >
                                         <img src={users.filter(el => el.id === x.userid)[0]!==undefined?
                                             users.filter(el => el.id === x.userid)[0].avatar
                                             :'https://lumpics.ru/wp-content/uploads/2017/11/Programmyi-dlya-sozdaniya-avatarok.png'}
@@ -57,8 +60,8 @@ const Home = ({history}) => {
                                             } className="btn btn-primary">Читать
                                                 целиком</button>
                                             <div>{Parser(x.date)}</div>
-                                            <Likes articleID={x.id} userID={x.userid}/>
                                         </div>
+                                        <Likes articleID={x.id} userID={x.userid}/>
                                     </div>
                                 </div>)
                         /*разметка по умолчанию*/

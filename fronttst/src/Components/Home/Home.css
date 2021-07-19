@@ -1,0 +1,70 @@
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .homeRow {
+        display: flex;
+        justify-content: center;
+    }
+    .homeColumn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .homeCard{
+        width:100%;
+    }
+
+}
+
+/* For PC */
+@media screen and (min-width: 540px)  {
+    .homeRow {
+        display: flex;
+        justify-content: center;
+    }
+    .homeColumn{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    .homeCard{
+        border: #a2aab1 solid 1px;
+        border-radius: 7px;
+        box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+        width:100%;
+    }
+    .homeCardBody{
+        width: 1000px;
+    }
+}
+
+.imgHome {
+    /* Такой же, как в первом примере */
+    min-height: 50px;
+}
+.imgHome:before {
+    content: url("https://lumpics.ru/wp-content/uploads/2017/11/Programmyi-dlya-sozdaniya-avatarok.png");
+    transform: scale(.08);
+    display: block;
+    position: absolute;
+    top: -0.7rem;
+    left: -0.8rem;
+    height: 10%;
+    width: 10%;
+    background-color: rgb(230, 230, 230);
+    border: 2px dotted rgb(200, 200, 200);
+    border-radius: 5px;
+}
+.imgHome:after {
+    content: "!!!" " Битая картинка " attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
