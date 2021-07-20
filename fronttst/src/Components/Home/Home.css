@@ -68,3 +68,16 @@
     width: 100%;
     text-align: center;
 }
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plug{
+    display: flex;
+    justify-content: center;
+}
+.plugHead{
+    display: flex;
+    justify-content: center;
+}

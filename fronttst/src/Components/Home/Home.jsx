@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {instance} from "../Register/RegisterPage";
-import {useEffect, useState} from "react";
 import MarkdownView from "react-showdown";
 import Likes from "../Likes/Likes";
 import {withRouter} from "react-router";
 import './Home.css'
 import Parser from '../../LogicComponents/ParserDate'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 
 export const Context=React.createContext({})
@@ -15,15 +16,21 @@ const Home = ({history}) => {
     const [users, setUsers] = useState(null)
     const [paginate, setPaginate] = useState(1)
     const [limit, setLimit]= useState(false)
+    const [enable, setEnable]= useState(false)
 
     // console.log('state Home', state)
 
     useEffect(() => {
+      let TO=setTimeout(()=> {
+           setEnable(true)
+       },3000)
         instance(`/users`).then(res => {
             setUsers(res.data)
         }).catch((e) => console.log(e))
         instance.get(`/articles/${paginate}`).then((res) => {
             setState(res.data)
+            clearTimeout(TO)
+            setEnable(false)
             if(res.data.length===0){
                 setLimit(true)
                 setPaginate(paginate-1)
@@ -33,6 +40,7 @@ const Home = ({history}) => {
         }).catch((error) => console.log(error))
     }, [paginate])
     return (<div>
+
                 <div className="container mb-3">
                     <h5>Главная заглавная</h5>
                 </div>
@@ -65,13 +73,25 @@ const Home = ({history}) => {
                                     </div>
                                 </div>)
                         /*разметка по умолчанию*/
-                        : <div>
-                            <div style={{"display": "flex", "justifyContent": "center"}}><h5>Здравствуй, если ты тут, то
-                                значит мой комп дома сдох!!!</h5></div>
-                            <div style={{"display": "flex", "justifyContent": "center"}}><p
-                                style={{"marginLeft": "20px", "color": "red"}}>Сервер на котором лежит база данных
-                                отвалился, звоните, пишите, целую, ПУХ !!!</p></div>
-                        </div>}
+                        :
+                        <div className="loader">
+                            <Loader
+                                type="Rings"
+                                color="#00BFFF"
+                                height={100}
+                                width={100}
+                                timeout={3000} //3 secs
+                            />
+                            {enable&&<div className="container plug">
+                                <div>
+                                    <div className="plugHead"><h4>Печалька</h4></div>
+                                    <div>Если вы видите эту надпись, то видимо сервер не прислал ответа</div>
+                                    <div>В большинстве случаев это решаемая проблема</div>
+                                    <div>Поэтому позвоните или напишите мне....</div>
+                                </div>
+                            </div>}
+                        </div>
+                    }
                 </div>
             {!limit&&<button onClick={() => setPaginate(paginate + 1)}>Показать еще</button>}
             {paginate>=2&&<button onClick={()=> {
