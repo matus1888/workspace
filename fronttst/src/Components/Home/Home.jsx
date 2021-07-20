@@ -34,7 +34,7 @@ const Home = ({history}) => {
             if(res.data.length===0){
                 setLimit(true)
                 setPaginate(paginate-1)
-            }else if(res.data.length<10){
+            }else if(res.data.length<9){
                 setLimit(true)
             }
         }).catch((error) => console.log(error))

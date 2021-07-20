@@ -21,11 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <workItem from="1626506439293" duration="42694000" />
       <workItem from="1626612398686" duration="9134000" />
       <workItem from="1626702158430" duration="12340000" />
-      <workItem from="1626784544725" duration="7598000" />
+      <workItem from="1626784544725" duration="12104000" />
     </task>
     <servers />
   </component>

@@ -106,8 +106,8 @@ const {Hasher}=require('../ubuntuDeploy/sha')
 
     const getArticles = (request, response) => {
         const page = request.params.page
-        const limit = page*10
-        const offset = (page*10)-10
+        const limit = page*9
+        const offset = (page*9)-9
         console.log('offset=',offset,'limit=', limit)
         pool.query('SELECT * FROM articles ORDER BY id DESC LIMIT $1 OFFSET $2', [limit, offset], (error, results) => {
             if (error) {
