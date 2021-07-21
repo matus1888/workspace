@@ -56,7 +56,7 @@ const Home = ({history}) => {
                                         <div className="card-body">
                                             <h5 className="card-title text-danger ">{x.heading}</h5>
                                             <MarkdownView className="card-text"
-                                                          style={{"height": "20vmin", "overflow": "auto"}}
+                                                          style={{"height": "40vmin", "overflow": "auto"}}
                                                           id={'output'}
                                                           markdown={x.body}
                                                           options={{emoji: true}}/>
@@ -93,11 +93,11 @@ const Home = ({history}) => {
                         </div>
                     }
                 </div>
-            {!limit&&<button onClick={() => setPaginate(paginate + 1)}>Показать еще</button>}
-            {paginate>=2&&<button onClick={()=> {
+            {!limit&&<button className="btn btn-primary" onClick={() => setPaginate(paginate + 1)}>Показать еще</button>}
+            {paginate>=2&&<button className="btn btn-primary" onClick={()=> {
                 setPaginate(paginate - 1)
                 setLimit(false)
-            }}>Предыдущие 10</button>}
+            }}>Показать предидущие</button>}
         </div>
     )
 }

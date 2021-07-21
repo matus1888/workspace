@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/User/UserArticles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/static/js/2.6723ca24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tst/queries/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/tst/queries/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/User/UsersArticles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,8 @@
       <workItem from="1626506439293" duration="42694000" />
       <workItem from="1626612398686" duration="9134000" />
       <workItem from="1626702158430" duration="12340000" />
-      <workItem from="1626784544725" duration="12104000" />
+      <workItem from="1626784544725" duration="12863000" />
+      <workItem from="1626872357793" duration="5741000" />
     </task>
     <servers />
   </component>
@@ -98,10 +99,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626790354007">
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626874266320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626790354007" />
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626874266320" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626792752554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

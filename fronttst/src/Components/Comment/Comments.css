@@ -1,0 +1,25 @@
+.userImg{
+    width: 60px;
+    border-radius: 10px;
+}
+.inputArea{
+    margin: 10px;
+}
+.dateCommentary{
+    margin:10px;
+}
+.comment{
+    height: 100%;
+    margin: 15px;
+    padding: 10px;
+    border: blue solid 1px;
+    border-radius: 7px;
+}
+.comment::before{
+    content: '\25b2';
+    color: blue;
+    position: relative;
+    left:30px;
+    top:-29px;
+    transform: rotate(45deg);
+}

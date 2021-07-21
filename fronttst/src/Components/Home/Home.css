@@ -4,35 +4,40 @@
         display: flex;
         justify-content: center;
     }
-    .homeColumn{
+
+    .homeColumn {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .homeCard{
-        width:100%;
+
+    .homeCard {
+        width: 100%;
     }
 
 }
 
 /* For PC */
-@media screen and (min-width: 540px)  {
+@media screen and (min-width: 540px) {
     .homeRow {
         display: flex;
         justify-content: center;
     }
-    .homeColumn{
+
+    .homeColumn {
         width: 33%;
         display: flex;
         justify-content: center;
     }
-    .homeCard{
+
+    .homeCard {
         border: #a2aab1 solid 1px;
         border-radius: 7px;
         box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
-        width:100%;
+        width: 100%;
     }
-    .homeCardBody{
+
+    .homeCardBody {
         width: 1000px;
     }
 }
@@ -41,6 +46,7 @@
     /* Такой же, как в первом примере */
     min-height: 50px;
 }
+
 .imgHome:before {
     content: url("https://lumpics.ru/wp-content/uploads/2017/11/Programmyi-dlya-sozdaniya-avatarok.png");
     transform: scale(.08);
@@ -54,6 +60,7 @@
     border: 2px dotted rgb(200, 200, 200);
     border-radius: 5px;
 }
+
 .imgHome:after {
     content: "!!!" " Битая картинка " attr(alt);
     display: block;
@@ -68,16 +75,24 @@
     width: 100%;
     text-align: center;
 }
-.loader{
+
+.loader {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.plug{
+
+.plug {
     display: flex;
     justify-content: center;
 }
-.plugHead{
+
+.plugHead {
     display: flex;
     justify-content: center;
+}
+
+.homeMdBlock {
+    height: 40vmin;
+    overflow: auto;
 }

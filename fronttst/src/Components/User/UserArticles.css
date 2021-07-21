@@ -1,0 +1,11 @@
+.articlesRow{
+    display: flex;
+    justify-content: space-around;
+}
+.UAButton{
+    margin: 1px;
+}
+.UAButtonSee{
+    margin: 1px;
+    max-height: 80px;
+}
