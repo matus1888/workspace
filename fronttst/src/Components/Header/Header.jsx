@@ -5,6 +5,7 @@ import logo from "../../../src/images/home.svg"
 import logout from "../../../src/images/logout.svg"
 import login from "../../../src/images/login.svg"
 import user from "../../../src/images/user.svg"
+import newUser from "../../../src/images/newUser.svg"
 
 const Header = ({history, location})=>{
     let cookie = ''
@@ -25,7 +26,7 @@ const Header = ({history, location})=>{
               <ul className="navbar-nav">
                 <li className="nav-item">
                   {mobile?<span className="nav-link" onClick={() => {
-                      history.push('/')}}><img src={logo} alt="homeImage"/></span>:<span
+                      history.push('/')}}><img src={logo} alt="headerNav"/></span>:<span
                       className={location.pathname === '/' ? "nav-link active" : "nav-link"}
                       aria-current="page" onClick={() => {
                       history.push('/')
@@ -40,7 +41,7 @@ const Header = ({history, location})=>{
                                  }}>
                               <img src={user}
                                    className="headerNav"
-                                   alt=""/>
+                                   alt="user"/>
                           </span>:
                           <span
                           className={location.pathname === '/profile' ? "nav-link active" : "nav-link"}
@@ -49,11 +50,18 @@ const Header = ({history, location})=>{
                       }}
                       >Моя страница</span>}</li>}
                   {!cookie.authorized&&<li className="nav-item">
-                    <span
-                        className={location.pathname === '/register' ? "nav-link active" : "nav-link"}
-                        aria-current="page" onClick={() => {
-                        history.push('/register')
-                    }}>Регистрация</span>
+                      {mobile
+                          ?<span
+                              className="nav-link"
+                              aria-current="page" onClick={() => {
+                              history.push('/register')
+                          }}><img className="headerNav" src={newUser} alt="registerImage"/>
+                              </span>
+                          :<span
+                          className={location.pathname === '/register' ? "nav-link active" : "nav-link"}
+                          aria-current="page" onClick={() => {
+                          history.push('/register')
+                      }}>Регистрация</span>}
                   </li>}
                 <li className="nav-item">
                     {mobile
