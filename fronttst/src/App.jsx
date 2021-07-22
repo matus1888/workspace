@@ -10,11 +10,13 @@ import OneArticle from "./Components/OneArticle/OneArtcle";
 import Home from "./Components/Home/Home";
 import Upload from "./Components/Upload";
 import Profile from "./Components/ProfilePage/Profile";
+import "./App.css"
 
 function App() {
     return (
-        <div className={'container'}>
-            <Header/>
+        <div className='container'>
+            <Header />
+            <div className="plug">plug</div>
                 <Route path="/user_page/:id" component={UserArticles}/>
                 <Route path="/one_article/:id" component={OneArticle}/>
                 <Route exact path="/" component={Home}/>

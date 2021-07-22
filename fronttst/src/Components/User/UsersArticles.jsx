@@ -44,7 +44,7 @@ const UserArticles = () => {
         {articles.length !== 0 && articles.map(x =>
            <div key={x.id} className={'row'}>
                <div   className='col articlesRow'  >
-                   <span className={'col '}>name: {x.heading}</span>
+                   <span className='col nameArticle'>{x.heading}</span>
                    <div>
                        <button
                            onClick={()=>setRedir({id:x.id})}

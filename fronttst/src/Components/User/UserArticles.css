@@ -9,3 +9,10 @@
     margin: 1px;
     max-height: 80px;
 }
+.nameArticle{
+    font-size: 150%;
+    font-style: italic;
+    color: #0a53be;
+    font-weight: bold;
+
+}

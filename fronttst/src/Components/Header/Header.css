@@ -1,0 +1,25 @@
+@media screen and (max-width: 540px) {
+    .head{
+        width: 100%;
+        height: 10% ;
+        position: fixed;
+        z-index: 999;
+        background-color: white;
+    }
+    .header span {
+        cursor: pointer;
+    }
+
+    .headerNav {
+        width: 20px;
+    }
+}
+@media screen and (min-width: 540px) {
+    .header span {
+        cursor: pointer;
+    }
+
+    .headerNav {
+        width: 20px;
+    }
+}

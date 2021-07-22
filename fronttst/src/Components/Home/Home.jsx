@@ -39,9 +39,8 @@ const Home = ({history}) => {
             }
         }).catch((error) => console.log(error))
     }, [paginate])
-    return (<div>
-
-                <div className="container mb-3">
+    return (<div className="allHome">
+                <div className="container mb-3 homeWrapper">
                     <h5>Главная заглавная</h5>
                 </div>
                 <div className="row homeRow" >

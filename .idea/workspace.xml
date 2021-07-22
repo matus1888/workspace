@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/User/UserArticles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Comment/Comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Register/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/User/UserArticles.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/User/UserArticles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/src/Components/User/UsersArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/User/UsersArticles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,22 +113,22 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1626443727031" />
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1626442505459">
+    <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1626952511455">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1626442505459" />
-    <state width="1248" height="172" key="GridCell.Tab.0.center" timestamp="1626442505458">
+    <state width="1248" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1626952511455" />
+    <state width="1248" height="172" key="GridCell.Tab.0.center" timestamp="1626952511455">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
-    <state width="1248" height="172" key="GridCell.Tab.0.left" timestamp="1626442505458">
+    <state width="1248" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1626952511455" />
+    <state width="1248" height="172" key="GridCell.Tab.0.left" timestamp="1626952511454">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
-    <state width="1248" height="172" key="GridCell.Tab.0.right" timestamp="1626442505458">
+    <state width="1248" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1626952511454" />
+    <state width="1248" height="172" key="GridCell.Tab.0.right" timestamp="1626952511455">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1626442505458" />
+    <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1626952511455" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626792853706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

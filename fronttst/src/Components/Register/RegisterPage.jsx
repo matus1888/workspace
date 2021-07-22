@@ -4,8 +4,8 @@ import React from 'react'
 import {Redirect, withRouter} from "react-router";
 import Upload from "../Upload";
 
-export const URL="http://localhost:3000"
-// export const URL="https://tst.matus.keenetic.name"
+// export const URL="http://localhost:3000"
+export const URL="https://tst.matus.keenetic.name"
 export const instance=axios.create({
     baseURL: URL,
     headers: {"Access-Control-Allow-Origin": "*"}

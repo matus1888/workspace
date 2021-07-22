@@ -1,5 +1,9 @@
 /* For Mobile */
 @media screen and (max-width: 540px) {
+    .allHome{
+    }
+    .homeWrapper{
+    }
     .homeRow {
         display: flex;
         justify-content: center;
