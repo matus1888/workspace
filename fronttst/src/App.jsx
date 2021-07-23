@@ -16,7 +16,7 @@ function App() {
     return (
         <div className='container'>
             <Header />
-            <div className="plug">plug</div>
+            <div className="plug">PLUG</div>
                 <Route path="/user_page/:id" component={UserArticles}/>
                 <Route path="/one_article/:id" component={OneArticle}/>
                 <Route exact path="/" component={Home}/>

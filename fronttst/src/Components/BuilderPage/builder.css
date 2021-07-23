@@ -1,42 +1,91 @@
-#wrapper {
-    width: 100%;
-    height: 100vmin;
-    display: grid;
-    grid-template-areas: 'head''body';
-    grid-template-rows: 10% 90%;
-    grid-gap: 1em ;
+@media screen and (max-width: 540px) {
+    #wrapper {
+        width: 100%;
+        height: 100vmin;
+        display: grid;
+        grid-template-areas: 'head''body';
+        grid-template-rows: 10% 90%;
+        grid-gap: 1em ;
+    }
+    #header{
+        justify-content: center;
+        grid-area: head;
+        font-size: 100%;
+    }
+    #header span{
+        padding: 3px;
+        border: darkred solid 1px;
+    }
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-areas: 'a';
+        grid-template-columns: 100%;
+    }
+    #a{
+        background-color: blue;
+        grid-column: auto;
+        grid-area: a;
+    }
+    #b{
+        background-color: yellow;
+        grid-column: auto;
+        grid-area: a;
+    }
+    #input{
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #output{
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
-#header{
-    display: flex;
-    justify-content: center;
-    grid-area: head;
-    font-size: 200%;
-}
-#body{
-    grid-area: body;
-    display: grid;
-    grid-template-areas: 'a b';
-    grid-template-columns: 50% 50%;
-}
-#a{
-    background-color: blue;
-    grid-column: auto;
-    grid-area: a;
-}
-#b{
-    background-color: yellow;
-    grid-column: auto;
-    grid-area: b;
-}
-#input{
-    width: 100%;
-    height: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#output{
-    width: 100%;
-    height: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+@media screen and (min-width: 540px) {
+    #wrapper {
+        width: 100%;
+        height: 100vmin;
+        display: grid;
+        grid-template-areas: 'head''body';
+        grid-template-rows: 10% 90%;
+        grid-gap: 1em ;
+    }
+    #header{
+        display: flex;
+        justify-content: center;
+        grid-area: head;
+        font-size: 200%;
+    }
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-areas: 'a b';
+        grid-template-columns: 50% 50%;
+    }
+    #a{
+        background-color: blue;
+        grid-column: auto;
+        grid-area: a;
+    }
+    #b{
+        background-color: yellow;
+        grid-column: auto;
+        grid-area: b;
+    }
+    #input{
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #output{
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }

@@ -23,7 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +126,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="1248" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1626952511455" />
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1627054985885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1627054985885" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626792853706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

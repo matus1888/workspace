@@ -13,6 +13,14 @@ const ArticleBuilderPage = (props) => {
     const [error,setError]=useState(undefined)
     const [message, setMessage]= useState(undefined)
     const [goHome,setGoHome]=useState(false)
+    const [isA,setIsA]=useState(false)
+
+    let isMobile=()=> {
+        let type=  window.matchMedia("(max-width: 540px)").matches
+        return type
+    }
+    let mobile=isMobile()
+
     let {userId} = useParams()
     let getText = (event) => {
         setMessage(undefined)
@@ -64,18 +72,38 @@ setError('....сначала заполните поля')
                    onChange={getHeading}
                    value={state && state.heading ? state.heading : ''}/><div id={'wrapper'}>
 
-        <div id={'header'}>Введите MD разметку здесь</div>
+        <div id={'header'}>Введите MD разметку здесь
+            {mobile&&<div>
+                <span style={!isA?{"backgroundColor":"grey"}:{}} onClick={()=>setIsA(false)}>текст</span>
+                <span style={isA?{"backgroundColor":"grey"}:{}} onClick={()=>setIsA(true)}>разметка</span>
+            </div>}
+        </div>
+
         <div id={'body'}>
-            <span id={'a'}>
+            {!isA&&mobile&&<span id={'a'}>
                 <textarea name="text"
                           id="input"
                           onChange={getText}
                           value={state ? state.text : ''}>
                 </textarea>
-            </span>
-            <span id={'b'}>
-                <MarkdownView id={'output'} markdown={state.text} options={{emoji: true}}/>
-            </span>
+            </span>}
+            {isA&&mobile&&<span id={'b'}>
+                <MarkdownView id={'output'}
+                              markdown={state.text}
+                              options={{emoji: true}}/>
+            </span>}
+            {!mobile&&<span id={'a'}>
+                <textarea name="text"
+                          id="input"
+                          onChange={getText}
+                          value={state ? state.text : ''}>
+                </textarea>
+            </span>}
+            {!mobile&&<span id={'b'}>
+                <MarkdownView id={'output'}
+                              markdown={state.text}
+                              options={{emoji: true}}/>
+                </span>}
             <div>
                 <button className={'btn btn-primary'} onClick={addNewAtricleToDb}>Добавить эту статью</button>
             </div>
