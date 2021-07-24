@@ -23,10 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/ArticleBuilderPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/BuilderPage/builder.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

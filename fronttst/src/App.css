@@ -4,6 +4,7 @@
         flex-wrap: inherit;
         font-size:400%;
         height: 100%;
+        color: white;
     }
 }
 @media screen and (min-width: 540px) {
