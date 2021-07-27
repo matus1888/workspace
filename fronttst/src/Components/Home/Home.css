@@ -44,6 +44,26 @@
     .homeCardBody {
         width: 1000px;
     }
+    .loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .plug {
+        display: flex;
+        justify-content: center;
+    }
+
+    .plugHead {
+        display: flex ;
+        justify-content: center;
+    }
+
+    .homeMdBlock {
+        height: 40vmin;
+        overflow: auto;
+    }
 }
 
 .imgHome {

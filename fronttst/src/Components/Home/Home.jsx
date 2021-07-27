@@ -81,7 +81,7 @@ const Home = ({history}) => {
                                 width={100}
                                 timeout={3000} //3 secs
                             />
-                            {enable&&<div className="container plug">
+                            {enable&&<div>
                                 <div>
                                     <div className="plugHead"><h4>Печалька</h4></div>
                                     <div>Если вы видите эту надпись, то видимо сервер не прислал ответа</div>
