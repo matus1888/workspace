@@ -64,6 +64,8 @@ app.post('/dislikes/:article', dbCL.setDisLike)
 app.get('/dislike/:article/:fromUserID',dbCL.getDisLike)
 app.delete('/dislikes/:article/:fromUserID/:userID',dbCL.deleteDisLike)
 
+app.get('/ips/', dbCL.setIPs)
+
 
 //file downloader
 app.post('/upload', upload.single('avatar'), function (req, res, next) {

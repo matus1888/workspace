@@ -161,6 +161,10 @@ const getDisLikes = (request, response) => {
         response.status(200).json(results.rowCount)
     })
 }
+const setIPs=(req, res)=>{
+    const ip=String(req.body.ip)
+    console.log(ip)
+}
 
 module.exports = {
     //comments
@@ -170,6 +174,7 @@ module.exports = {
     createComment,
     deleteComment,
     //likes
+    setIPs,
     setLike,
     getLikes,
     getLike,
