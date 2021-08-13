@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="29e8bbc1-11c7-46eb-9247-51cd86a5f182" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/fronttst/src/Components/Home/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\jetBrains\ideaIU-2020.1.windows\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -77,6 +73,10 @@
       <workItem from="1626702158430" duration="12340000" />
       <workItem from="1626784544725" duration="12863000" />
       <workItem from="1626872357793" duration="5741000" />
+      <workItem from="1627553141717" duration="8179000" />
+      <workItem from="1627763673099" duration="690000" />
+      <workItem from="1627805448395" duration="4906000" />
+      <workItem from="1628501531009" duration="409000" />
     </task>
     <servers />
   </component>
@@ -104,10 +104,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626792752554" />
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1626443727031">
-      <screen x="72" y="27" width="1294" height="741" />
+    <state x="425" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1628501937141">
+      <screen x="0" y="27" width="1280" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1626443727031" />
+    <state x="425" y="155" key="FileChooserDialogImpl/0.27.1280.741@0.27.1280.741" timestamp="1628501937141" />
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1627573589787" />
     <state width="1248" height="172" key="GridCell.Tab.0.bottom" timestamp="1626952511455">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -132,10 +133,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626792853706" />
-    <state x="342" y="203" key="new project wizard" timestamp="1619012414399">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="342" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1619012414399" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1626550253236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
