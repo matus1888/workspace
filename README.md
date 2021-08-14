@@ -1,4 +1,4 @@
-# Workspace
+# Workspace (In process)
 ## _This project is fullstack Js application_
 ________________________
 In this project, there are two main directories frontst and tst, which are front and back, respectively. In the front of the unit, React with its hooks is taken as a basis. The backend part is based on Express and Postgres database, which run on the local machine and are forwarded to the network.
