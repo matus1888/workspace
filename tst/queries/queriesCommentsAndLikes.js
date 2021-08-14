@@ -166,7 +166,7 @@ const setIPs=(req, res)=>{
     console.log(ip)
     pool.query('SELECT * FROM visits WHERE ip=$1',[ip],(error, results)=>{
         if(results.rowCount===0){
-            pool.query(`INSERT INTO visits (ip) VALUES ($1)`,[ip],(error,results)=>{
+            pool.query(`INSERT INTO visits (ip, date) VALUES ($1, now())`,[ip],(error,results)=>{
               if(results) res.status(200).json({ok:true})
             })
         }

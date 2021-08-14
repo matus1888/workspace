@@ -16,7 +16,7 @@ CREATE TABLE visits (id serial PRIMARY KEY
 ALTER TABLE articles ADD COLUMN body text;
 ALTER TABLE articles ADD COLUMN date timestamptz;
 ALTER TABLE users ADD COLUMN avatar text;
-ALTER TABLE visits ADD COLUMN date timetamptz;
+ALTER TABLE visits ADD COLUMN date timestamptz;
 ALTER TABLE comments ADD COLUMN id serial PRIMARY KEY;
 ALTER TABLE likes ADD COLUMN id serial PRIMARY KEY;
 INSERT INTO comments (userID,articleID,date,comment) VALUES (1, 17, now(), 'первый комментарий');
