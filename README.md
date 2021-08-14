@@ -21,11 +21,13 @@ USERS:
 id   | name | password |avatar 
 ---- | ---- | ---- | ---- |
 id  serial PRIMARY KEY|name varchar(255)| password varchar(255)|text
+________________
 ARTICLES: 
 id   | date |heading |body|userID 
 ---- | ---- | ---- | ---- |------|
 id serial PRIMARY KEY| date timestamptz| heading varchar(512)|body text| userID INTEGER REFERENCES users (id)
  COMMENTS
+ _____________________
  id   | userID |articleID |date |comment 
 ---- | ---- | ---- | ---- |------|
 id serial PRIMARY KEY|userID INTEGER REFERENCES users (id)|articleID INTEGER REFERENCES articles (id)|date timestamptz| comment text
