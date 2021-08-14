@@ -65,6 +65,7 @@ app.get('/dislike/:article/:fromUserID',dbCL.getDisLike)
 app.delete('/dislikes/:article/:fromUserID/:userID',dbCL.deleteDisLike)
 
 app.post('/ips/', dbCL.setIPs)
+app.get('/ips/',dbCL.getIPs)
 
 
 //file downloader

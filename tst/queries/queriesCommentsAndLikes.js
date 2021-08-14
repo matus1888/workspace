@@ -164,6 +164,18 @@ const getDisLikes = (request, response) => {
 const setIPs=(req, res)=>{
     const ip=String(req.body.ip)
     console.log(ip)
+    pool.query('SELECT * FROM visits WHERE ip=$1',[ip],(error, results)=>{
+        if(results.rowCount===0){
+            pool.query(`INSERT INTO visits (ip) VALUES ($1)`,[ip],(error,results)=>{
+              if(results) res.status(200).json({ok:true})
+            })
+        }
+    })
+}
+const getIPs=(req,res)=>{
+    pool.query('SELECT * FROM visits',(error,results)=>{
+        res.status(200).json(results.rows)
+    })
 }
 
 module.exports = {
@@ -174,6 +186,7 @@ module.exports = {
     createComment,
     deleteComment,
     //likes
+    getIPs,
     setIPs,
     setLike,
     getLikes,

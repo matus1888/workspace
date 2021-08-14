@@ -16,6 +16,10 @@ CREATE TABLE dislikes (id serial PRIMARY KEY
                         , articleID INTEGER REFERENCES articles (id)
                         , userID INTEGER REFERENCES users (id)
                         , fromUserID INTEGER REFERENCES users(id));
+CREATE TABLE visits (id serial PRIMARY KEY
+                        ,  ip varchar (256)
+                       );
+
 ALTER TABLE articles ADD COLUMN body text;
 ALTER TABLE articles ADD COLUMN date timestamptz;
 ALTER TABLE users ADD COLUMN avatar text;
@@ -27,3 +31,4 @@ INSERT INTO articles (heading, userid, body) VALUES ('первая статья 
 -- вывести последние 10  статей из базы данных  и отсоортировать по
 SELECT * FROM articles ORDER BY id DESC LIMIT 10;
 -- DESC LIMIT *** OFFSET (количество пропускаемых элементов сначала)
+-- INSERT INTO visits (ip) VALUES ('192.168.1.1');
