@@ -26,8 +26,9 @@ ARTICLES:
 id   | date |heading |body|userID 
 ---- | ---- | ---- | ---- |------|
 id serial PRIMARY KEY| date timestamptz| heading varchar(512)|body text| userID INTEGER REFERENCES users (id)
- COMMENTS
  _____________________
+ COMMENTS
+
  id   | userID |articleID |date |comment 
 ---- | ---- | ---- | ---- |------|
 id serial PRIMARY KEY|userID INTEGER REFERENCES users (id)|articleID INTEGER REFERENCES articles (id)|date timestamptz| comment text
