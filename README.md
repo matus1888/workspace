@@ -49,9 +49,11 @@ npm install
 npm start 
 ```
 ## Screenshots
-![logo1]()
+![logo1](https://github.com/matus1888/workspace/blob/main/scr1.jpg)
 __________
-![logo2]()
+![logo2](https://github.com/matus1888/workspace/blob/main/scr1.png)
+__________
+![logo3](https://github.com/matus1888/workspace/blob/main/scr2.png)
 
 ## Watch:
 [gh-pages my Workspace](https://matus1888.github.io/workspace/)
