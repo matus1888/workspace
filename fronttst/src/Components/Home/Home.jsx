@@ -9,7 +9,6 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
 
-export const Context=React.createContext({})
 
 const Home = ({history}) => {
     const [state, setState] = useState(null)
@@ -44,7 +43,7 @@ const Home = ({history}) => {
                     <h5>Главная заглавная</h5>
                 </div>
                 <div className="row homeRow" >
-                    {state && users ? state.map(x =>
+                        {state && users ? state.map(x =>
                                 <div key={x.id + x.heading} className='homeColumn'>
                                     <div className="card mb-2 homeCard" >
                                         <img src={users.filter(el => el.id === x.userid)[0]!==undefined?

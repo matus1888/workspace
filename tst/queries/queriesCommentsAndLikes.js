@@ -99,13 +99,17 @@ const setLike = (req, res) => {
 }
 const getLikes = (request, response) => {
     const articleID = Number(request.params.article)
-    pool.query('SELECT * FROM likes WHERE articleID=$1', [articleID], (error, results) => {
-        if (error) {
-            console.log(error)
-            throw error
-        }
-        response.status(200).json(results.rowCount)
-    })
+    if (articleID===NaN){
+        response.status(200).json({error: "articleId NaN is not correct"})
+    }else {
+        pool.query('SELECT * FROM likes WHERE articleID=$1', [articleID], (error, results) => {
+            if (error) {
+                console.log(error)
+                throw error
+            }
+            response.status(200).json(results.rowCount)
+        })
+    }
 }
 
 
