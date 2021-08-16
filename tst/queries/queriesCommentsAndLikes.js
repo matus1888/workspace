@@ -157,13 +157,15 @@ const setDisLike = (req, res) => {
 }
 const getDisLikes = (request, response) => {
     const articleID = Number(request.params.article)
+    if (articleID===NaN){response.status(200).json({error:"NaN is not correct articleId"})}
+    else{
     pool.query('SELECT * FROM dislikes WHERE articleID=$1', [articleID], (error, results) => {
         if (error) {
             console.log(error)
             throw error
         }
         response.status(200).json(results.rowCount)
-    })
+    })}
 }
 const setIPs=(req, res)=>{
     const ip=String(req.body.ip)
