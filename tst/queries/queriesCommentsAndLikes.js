@@ -98,10 +98,11 @@ const setLike = (req, res) => {
     })
 }
 const getLikes = (request, response) => {
-    const articleID = Number(request.params.article)
-    if (articleID===NaN){
+    if (request.params.article==='undefined'){
         response.status(200).json({error: "articleId NaN is not correct"})
     }else {
+        const articleID = Number(request.params.article)
+
         pool.query('SELECT * FROM likes WHERE articleID=$1', [articleID], (error, results) => {
             if (error) {
                 console.log(error)
@@ -156,9 +157,10 @@ const setDisLike = (req, res) => {
     })
 }
 const getDisLikes = (request, response) => {
-    const articleID = Number(request.params.article)
-    if (articleID===NaN){response.status(200).json({error:"NaN is not correct articleId"})}
+    if (request.params.article==='undefined'){
+        response.status(200).json({error:"NaN is not correct articleId"})}
     else{
+        const articleID = Number(request.params.article)
     pool.query('SELECT * FROM dislikes WHERE articleID=$1', [articleID], (error, results) => {
         if (error) {
             console.log(error)

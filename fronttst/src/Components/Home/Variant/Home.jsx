@@ -17,7 +17,7 @@ import clsx from "clsx";
 import {Context} from "../../../App";
 import Parser from "../../../LogicComponents/ParserDate";
 import MarkdownView from "react-showdown";
-import Likes from "../../Likes/Likes";
+import Likes from "../../Likes/Variant/Likes";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -115,13 +115,8 @@ const Home = ({history}) => {
                                           options={{emoji: true}}/>
                         </CardContent>
                         <CardActions disableSpacing>
-                            <IconButton aria-label="add to favorites">
-                                <FavoriteIcon />
-                            </IconButton>
-                            <IconButton aria-label="share">
-                                <ThumbDownIcon />
-                            </IconButton>
-                            <Likes></Likes>
+                            {/*Todo валит сервак*/}
+                            <Likes articleID={x.id} userID={x.userid}></Likes>
                             <IconButton
                                 className={clsx(classes.expand, {
                                     [classes.expandOpen]: expanded,

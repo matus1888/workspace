@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import {withRouter} from "react-router";
-import {instance} from '../Register/RegisterPage'
-import './Likes.css'
+import {instance} from '../../Register/RegisterPage'
+import IconButton from "@material-ui/core/IconButton";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ThumbDownIcon from "@material-ui/icons/ThumbDown";
 
 const Likes = (props) => {
     const [likes, setLikes] = useState(null)
@@ -20,7 +22,7 @@ const Likes = (props) => {
             }
         ).catch(e => console.log(e))
         instance.get(`/dislikes/${props.articleID||0}`).then(res => {
-            console.log("dis get=", res.data)
+                console.log("dis get=", res.data)
                 setDislikes(res.data)
             }
         ).catch(e => console.log(e))
@@ -72,12 +74,24 @@ const Likes = (props) => {
     return (<div>
         {cookie.authorized&&<div className="likesBlock container">
             {/*{`checkID${checkID}already${already}`}*/}
-            <span disabled={checkID}
-                  onClick={!already?setLike:setUnLike}
-                  className='like'>&#10084; {likes}</span>
-            <span disabled={checkID}
-                  onClick={!alreadyDis?setDisLike:setUnDisLike}
-                  className="dislike">&#128078; {dislikes}</span>
+                {/*<span disabled={checkID}*/}
+                {/*      onClick={!already?setLike:setUnLike}*/}
+                {/*      className='like'>&#10084; {likes}</span>*/}
+                {/*<span disabled={checkID}*/}
+                {/*      onClick={!alreadyDis?setDisLike:setUnDisLike}*/}
+                {/*      className="dislike">&#128078; {dislikes}</span>*/}
+            <IconButton aria-label="like">
+                <FavoriteIcon
+                    disabled={checkID}
+                    onClick={!already?setLike:setUnLike}
+                />{likes}
+            </IconButton>
+            <IconButton aria-label="disLike">
+                <ThumbDownIcon
+                    disabled={checkID}
+                    onClick={!alreadyDis?setDisLike:setUnDisLike}
+                     />{dislikes}
+            </IconButton>
         </div>}
     </div>)
 }
