@@ -16,6 +16,8 @@ import {Context} from "../../../App";
 const useStyles = makeStyles((theme) => ({
     root: {
         height : "65px",
+        flexDirection:"row",
+        alignItems:"center"
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -39,6 +41,12 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         backgroundColor: "brown"
+    },
+    blockButton:{
+        left:"0"
+    },
+    toolBar:{
+        width:"100%"
     }
 }));
 
@@ -57,7 +65,7 @@ function ButtonAppBar({history}) {
 
     let blockButton = () => {
         return !smallLarge ?
-            (<div>
+            (<div className={classes.blockButton}>
                 <Button variant={"contained"}
                         className={classes.button}
                         onClick={() => history.push("/")}
@@ -70,7 +78,7 @@ function ButtonAppBar({history}) {
                         onClick={loginOrOut}
                         className={classes.button}>{cookie.authorized ? "Выйти" : "Войти"}</Button>
             </div>) : (
-                <div>
+                <div className={classes.blockButton}>
                     <IconButton size={"small"} variant={"contained"}
                                 className={classes.button}
                                 onClick={() => history.push("/")}
@@ -95,7 +103,7 @@ function ButtonAppBar({history}) {
 
     return (
         <AppBar className={classes.root}>
-            <Toolbar>
+            <Toolbar className={classes.toolBar}>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     <MenuIcon className={classes.menuIcon}/>
                 </IconButton>

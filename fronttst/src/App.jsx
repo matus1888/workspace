@@ -5,7 +5,7 @@ import LoginPage from "./Components/Login/LoginPage";
 import Header from "./Components/Header/Variant/Header";
 import UserArticles from "./Components/User/UsersArticles";
 import ArticleBuilderPage from "./Components/BuilderPage/ArticleBuilderPage";
-import OneArticle from "./Components/OneArticle/OneArtcle";
+import OneArticle from "./Components/OneArticle/Variant/OneArticle";
 import Home from "./Components/Home/Variant/Home";
 import Upload from "./Components/Upload";
 import Profile from "./Components/ProfilePage/Profile";

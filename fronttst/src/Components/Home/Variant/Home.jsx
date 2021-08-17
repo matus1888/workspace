@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import LinearProgress from "@material-ui/core/LinearProgress"
 import {withRouter} from "react-router";
 import Box from "@material-ui/core/Box"
 import {instance} from "../../Register/RegisterPage";
@@ -46,6 +47,11 @@ const useStyles = makeStyles((theme) => ({
     gridItem: {
         display: "flex",
         justifyContent: "center"
+    },
+    linear:{
+        position:"fixed",
+        top:"65px",
+        width:"100vw"
     }
 }));
 
@@ -89,7 +95,7 @@ const Home = ({history}) => {
     }, [paginate])
 
     return (
-        <> <Typography variant={"h3"}>Главная страница</Typography>
+        <> <Typography variant={"h5"} paragraph>Главная страница</Typography>
             <Grid container spacing={2}>
                 {state && users ? state.map(x =>
                     <Grid key={x.id.toString()+x.heading}
@@ -122,20 +128,24 @@ const Home = ({history}) => {
                             <CardActions disableSpacing>
                                 {/*Todo валит сервак*/}
                                 <Likes articleID={x.id} userID={x.userid}></Likes>
-                                <IconButton
-                                    className={clsx(classes.expand, {
-                                        [classes.expandOpen]: expanded,
-                                    })}
-                                    onClick={() => handleExpandClick(x.id)}
-                                    aria-expanded={expanded}
-                                    aria-label="show more"
-                                >
-                                    <ExpandMoreIcon/>
-                                </IconButton>
+                                    <IconButton
+                                        className={clsx(classes.expand, {
+                                            [classes.expandOpen]: expanded,
+                                            })}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMoreIcon  onClick={() => handleExpandClick(x.id)} />
+                                    </IconButton>
                             </CardActions>
                         </Card>
-                    </Grid>) : (<div>обработка исключительной ситуации
-                        {enable && <div>Сервер не отвечает</div>}
+                    </Grid>) : (<div>
+                        <LinearProgress  className={classes.linear} />
+                        {enable && <Box m={3}>
+                            <Typography>
+                                К сожалению удалённый сервер не прислал ответа
+                            </Typography>
+                        </Box>}
                     </div>
                 )}
             </Grid>
