@@ -106,7 +106,7 @@ const Home = ({history}) => {
                             <CardHeader
                                 avatar={
                                     <Avatar aria-label="recipe" className={classes.avatar}>
-                                        {/*Todo letterAvatar*/}
+                                        {/*Todo letterAvatar and UserName?*/}
                                         <img className={classes.avatar} src={getUserAvatar(x.userid)} alt=""/>
                                     </Avatar>
                                 }

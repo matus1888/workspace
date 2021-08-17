@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import MarkdownView from "react-showdown";
 import {instance} from "../../Register/RegisterPage";
 import {useParams, withRouter} from "react-router";
-import Comments from "../../Comment/Comments";
+import Comments from "../../Comment/Variant/Comments";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import ParserDate from "../../../LogicComponents/ParserDate";
@@ -40,11 +40,10 @@ const OneArticle=({history})=>{
             <Button variant={"contained"}
                     color={"primary"}
                 onClick={clickListener}
-            >Перейти к моим статьям</Button>
+            >{cookie.authorized?"Перейти к моим статьям":"На главную"}</Button>
         </Box>
         }
         <Paper elevation={5}>
-        {/*    todo Card*/}
         <div style={{padding:"10px"}}>
             <Avatar src={user.avatar} /><Typography color={"primary"}>{user.name}</Typography>
             <span><Typography>{ParserDate(state.date)}</Typography></span>
