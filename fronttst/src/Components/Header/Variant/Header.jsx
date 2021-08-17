@@ -15,8 +15,7 @@ import {Context} from "../../../App";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        position: "sticky",
-        flexGrow: 1,
+        height : "65px",
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -95,7 +94,7 @@ function ButtonAppBar({history}) {
     }
 
     return (
-        <AppBar>
+        <AppBar className={classes.root}>
             <Toolbar>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     <MenuIcon className={classes.menuIcon}/>

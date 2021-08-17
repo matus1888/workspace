@@ -24,6 +24,7 @@ function App() {
     return (
         <Context.Provider value={small}>
             <div><Header />
+            <div style={{height:"65px"}}>  plug </div>
                 <Route path="/user_page/:id" component={UserArticles}/>
                 <Route path="/one_article/:id" component={OneArticle}/>
                 <Route exact path="/" component={Home}/>
