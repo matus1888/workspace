@@ -1,0 +1,19 @@
+.registration-page__wrapper{
+    display: flex;
+    justify-content: center ;
+}
+.registration-page__wrapper input{
+    width: 80%;
+    height: 40px;
+    border: blue solid 1px;
+    border-radius: 8px;
+}
+h6 {
+    color: red;
+}
+.RPBtnContainer{
+    margin: 10px;
+}
+.RPContainerInputs{
+    display: flex;
+}

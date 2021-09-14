@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, {useState} from 'react';
 import {withRouter} from "react-router";
 import {URL} from './Register/RegisterPage'
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
 
 const Upload =(props)=>{
@@ -45,7 +47,7 @@ const Upload =(props)=>{
 
             return (
                 <div>
-                    <h5>File INFO:</h5>
+                    <Typography variant="h5">File INFO:</Typography>
                     <p>File Name: {state.selectedFile.name}</p>
                     <p>File Type: {state.selectedFile.type}</p>
                     <p>
@@ -58,7 +60,7 @@ const Upload =(props)=>{
             return (
                 <div>
                     <br />
-                    <h4>Выбери перед тем как нажимать Загрузить</h4>
+                    <Typography variant="h5">Выбери перед тем как нажимать Загрузить</Typography>
                 </div>
             );
         }
@@ -66,15 +68,16 @@ const Upload =(props)=>{
 
         return (
             <div>
-                <h4>
+                <Typography variant="h5">
                     Загрузка Аватарки
-                </h4>
+                </Typography>
                 <div>
                     {image&& <img style={{"width":"100px"}} src={image} alt='avatar'/>}
                     <input type="file" onChange={onFileChange} />
-                    <button onClick={onFileUpload}>
+                    <Button variant="contained"
+                        onClick={onFileUpload}>
                         Загрузить!
-                    </button>
+                    </Button>
                 </div>
                 {fileData()}
             </div>
